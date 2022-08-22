@@ -1,0 +1,28 @@
+@import '.././Styles/index.scss';
+.login__container {
+    height: 60vh;
+    }
+.login {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0px 4px 40px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 19px;
+  display: flex;
+  margin: auto;
+  padding: 30px;
+  margin-top: 10rem;
+
+&_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &_email {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  &_password {
+    margin-bottom: 10px;
+  } 
+
+}
