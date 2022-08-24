@@ -1,1 +1,21 @@
 @import './../Styles/index.scss';
+
+.nav_title{
+text-align: center;
+}
+
+.nav_chambre_content {
+    padding-right: 10%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 0px 0px 0px;
+}
+.image_bureau {
+    padding-bottom : 100px;
+    cursor: pointer;
+}
+.image_bureau:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+    }

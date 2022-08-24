@@ -103,7 +103,7 @@
     width: 98%;
     background-color: #ffffff; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 25px;
     border-bottom: 2px solid;
@@ -113,7 +113,6 @@
 .nav {
     width: 40%;
     height: 50px;
-    margin: 0;
   }
  .navbar {
     height: 50px;
