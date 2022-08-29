@@ -8,7 +8,7 @@ export default function Header() {
       <div className="nav_container">
               <span className="logo"><img className="logo_img" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo ArtisenBois" /></span>
       <nav className="nav">
-        <ul class="navbar">
+        <ul class="nav_bar">
           <li>
               <NavLink to="/">Accueil</NavLink>
           </li>
