@@ -1,8 +1,5 @@
 @import './../Styles/index.scss';
 
-.icons{
-  display: inline-flex;
-}
 .iconContact{
   background-color: white !important;
   margin: 0 25px;
@@ -32,7 +29,6 @@
 }
 .iconContact .layer span.fab{
   font-size: 30px;
-  line-height: 55px;
   text-align: center;
 }
 .iconContact:hover .layer span:nth-child(1){
@@ -111,14 +107,12 @@
     margin: 0 auto 0 auto;
   }
 .nav {
-    width: 40%;
     height: 50px;
   }
  .nav_bar {
     height: 50px;
     padding: 0;
     margin: 0;
-    position: absolute;
   }
   .nav_bar li {
     height: auto;
