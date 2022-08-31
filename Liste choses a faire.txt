@@ -1,0 +1,11 @@
+-Accueil-
+Trouver une image pour mettre en fond qui recouvre la page
+Mettre la phrase "Votre bonheur sur mesure"
+
+-Meuble-
+Faire détail d'un meuble
+
+-Choses a faire-
+Mettre en responsive
+Mettre en place la sécurité
+Mettre en place le SEO

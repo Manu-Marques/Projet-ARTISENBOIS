@@ -55,7 +55,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-              <NavLink to="/salle-de-bain">Salle de bain <i class="arrow down"></i></NavLink>
+              <NavLink to="/salle-de-bain">SDB <i class="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/salle-de-bain/petit-placard">Petit placard</NavLink>

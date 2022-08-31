@@ -1,3 +1,4 @@
+import Accueil from '../components/Accueil';
 import Header from '../components/Header';
 import Login from '../components/Login';
 import Contact from '../components/Contact';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
     <Header/>
 <Routes>
+    <Route path="/" element={<Accueil/>} />
     <Route path="/login" element={<Login />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/chambre" element={<Chambre />} />

@@ -1,8 +1,11 @@
 @import './../Styles/index.scss';
 
 .container {
-    margin-top: 230px;}
-
+    margin-top: 230px;
+}
+.container h1 {
+    text-align: center;
+}
 .row {
     width: 100%;
     display: flex;

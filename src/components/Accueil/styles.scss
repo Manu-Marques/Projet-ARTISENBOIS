@@ -1,0 +1,20 @@
+@import './../Styles/index.scss';
+.home{
+
+&_logo {
+    width: 100%;
+    padding-top: 20px;
+}
+&_title {
+    position: absolute;
+    color: #E2CBAC;
+    font-size: 100px;
+    right: 50px;
+}
+&_subtitle {
+    position: absolute;
+    color: #332717;
+    right: 50px;
+    top: 70px;
+}
+}

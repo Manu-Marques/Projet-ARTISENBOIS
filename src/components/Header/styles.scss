@@ -105,6 +105,8 @@
     border-bottom: 2px solid;
     padding-bottom: 20px;
     margin: 0 auto 0 auto;
+    z-index: 1;
+    position: relative;
   }
 .nav {
     height: 50px;
@@ -116,7 +118,7 @@
   }
   .nav_bar li {
     height: auto;
-    width: 135.8px;
+    width: 110px;
     float: left;
     text-align: center;
     list-style: none;
