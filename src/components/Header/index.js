@@ -8,12 +8,12 @@ export default function Header() {
       <div className="nav_container">
               <span className="logo"><img className="logo_img" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo ArtisenBois" /></span>
       <nav className="nav">
-        <ul class="navbar">
+        <ul className="nav_bar">
           <li>
               <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-         <NavLink to="/chambre">Chambre <i class="arrow down"></i></NavLink>
+         <NavLink to="/chambre">Chambre <i className="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/chambre/placard">Placard</NavLink>
@@ -27,7 +27,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-              <NavLink to="/salon">Salon <i class="arrow down"></i></NavLink>
+              <NavLink to="/salon">Salon <i className="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/salon/buffet">Buffet</NavLink>
@@ -41,7 +41,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-              <NavLink to="/cuisine">Cuisine <i class="arrow down"></i></NavLink>
+              <NavLink to="/cuisine">Cuisine <i className="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/cuisine/plan-de-travail">Plan de travail</NavLink>
@@ -55,7 +55,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-              <NavLink to="/salle-de-bain">Salle de bain <i class="arrow down"></i></NavLink>
+              <NavLink to="/salle-de-bain">SDB <i class="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/salle-de-bain/petit-placard">Petit placard</NavLink>
@@ -69,7 +69,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-              <NavLink to="/bureau">Bureau <i class="arrow down"></i></NavLink>
+              <NavLink to="/bureau">Bureau <i className="arrow down"></i></NavLink>
             <ul>
               <li>
                   <NavLink to="/bureau/table">Table</NavLink>
@@ -89,15 +89,15 @@ export default function Header() {
       </nav>
       <div class="icons">
       <NavLink className="iconContact" to="/contact">
-       <div class="layer">
+       <div className="layer">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          <span class="fab fa-facebook-f"><FaEnvelope />
+          <span className="fab fa-facebook-f"><FaEnvelope />
 </span>
        </div>
-       <div class="text">
+       <div className="text">
           Contact
        </div>
       </NavLink>
