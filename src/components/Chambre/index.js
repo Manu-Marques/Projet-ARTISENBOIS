@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Chambre () {
     return (
-        <div className="container">
+        <div className="main">
             <h1>Chambre</h1>
 <div className="row">
 <div className="image">
