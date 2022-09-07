@@ -1,76 +1,110 @@
 @import './../Styles/index.scss';
 
-/* Pour l'icone Contact */
-.iconContact{
-  background-color: white !important;
-  margin: 0 25px;
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  position: relative;
+body{
+	background: #e7e7e9;
 }
-.iconContact .layer{
-  width: 55px;
-  height: 55px;
-  transition: transform 0.3s;
+
+.wrapper{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	width: 100%;
+	border-bottom: 1px solid #e7e7e9;
+	transition: all .6s ease-in-out;
+
 }
-.iconContact:hover .layer{
-  background-color: white !important;
-  transform: rotate(-35deg) skew(20deg);
+
+.mega_menu{
+	width: 100%;
+	height: 60px;
+	transition: all .6s ease-in-out;
+
 }
-.iconContact .layer span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  transition: all 0.3s;
+.mega_menu ul{
+	width: 100%;
+	background: white;
+	text-align: center;
+	line-height: 59px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+  
 }
-.iconContact .layer span.fab{
-  font-size: 30px;
-  text-align: center;
+
+.mega_menu ul li{
+	display: inline-block;
+	margin: 0 15px;
+	padding: 0 15px;
 }
-.iconContact:hover .layer span:nth-child(1){
-  opacity: 0.2;
+
+.mega_menu ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	font-size: 12px;
+	display: block;
 }
-.iconContact:hover .layer span:nth-child(2){
-  opacity: 0.4;
-  transform: translate(5px, -5px);
+
+.wrapper .banner_img img{
+	width: 100%;
+	height: 500px;
 }
-.iconContact:hover .layer span:nth-child(3){
-  opacity: 0.6;
-  transform: translate(10px, -10px);
+
+.mega_menu ul li .sub_menu{
+	position: absolute;
+	background: white;
+	width: 100%;
+	left: 0;
+	top: 58px;
+	padding: 25px 15px;
+	display: flex;
+	justify-content: space-around;
+	visibility: hidden;
+	line-height: 24px;
+	border-top: 1px solid #e7e7e9;
+	z-index: 1;
+	transition:transform 1s;
+
 }
-.iconContact:hover .layer span:nth-child(4){
-  opacity: 0.8;
-  transform: translate(15px, -15px);
+
+.mega_menu ul li:hover{
+	background: white;
 }
-.iconContact:hover .layer span:nth-child(5){
-  opacity: 1;
-  transform: translate(20px, -20px);
+
+.mega_menu ul li:hover a{
+	color: #ca914e;
 }
-.iconContact:nth-child(1) .layer span,
-.iconContact:nth-child(1) .text{
-  color: #332717;
-  border-color: #332717;
+
+.mega_menu ul li:hover .sub_menu{
+	visibility: visible;
 }
-.iconContact:hover:nth-child(1) .layer span{
-  box-shadow: -1px 1px 3px #332717;
+.mega_menu ul li .sub_menu .col {
+	width: 25%;
+	padding: 0 105px;
+	
 }
-.iconContact .text{
-  position: absolute;
-  left: 50%;
-  margin-bottom: 10px;
-  opacity: 0;
-  font-weight: 500;
-  transform: translateX(-50%);
-  transition: bottom 0.3s ease, opacity 0.3s ease;
+
+.mega_menu ul li .sub_menu .col img{
+	width: 250px;
+	height: 180px;
+	display: block;
 }
-.iconContact:hover .text{
-  bottom: -35px;
-  opacity: 1;
+
+.mega_menu ul li .sub_menu p{
+	color: #fff;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.logo {
+  max-width: 75%;
+
+  &_menu {
+	max-width: 20%;
+  }
 }
 
 /* Pour la fléche dans le navbar */
@@ -88,73 +122,7 @@
 }
 
 /* Pour le Header */
-.nav_container {
-    width: 98%;
-    background-color: #ffffff; 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 25px;
-    border-bottom: 2px solid;
-    padding-bottom: 20px;
-    margin: 0 auto 0 auto;
-    z-index: 1;
-    position: relative;
-  }
-.nav {
-    height: 50px;
-  }
 
-  
-  
- .nav_bar {
-    height: 50px;
-    padding: 0;
-    margin: 0;
-  }
-  .nav_bar li {
-    height: auto;
-    width: 110px;
-    float: left;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #332717;
-}
-  .nav_bar a {
-    padding: 18px 0;
-    border-left: 1px solid #ccc9c9;
-    text-decoration: none;
-    color: white;
-    display: block;
-  }
-  .nav_bar li:hover,
-  a:hover {
-    color: black;
-  }
-  .nav_bar li ul {
-    display: none;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .nav_bar li:hover ul {
-    display: block;
-  }
-  .nav_bar li ul li {
-    background-color: #332717;
-    
-}
-  .nav_bar li ul li a {
-    border-left: 1px solid #444444;
-    border-right: 1px solid #444444;
-    border-top: 1px solid #c9d4d8;
-    border-bottom: 1px solid #444444;
-  }
-  .nav_bar li ul li a:hover {
-    background-color: #E2CBAC;
-    color: black;
-  }
+
   
  
