@@ -1,9 +1,11 @@
 import './styles.scss';
+import { FaScrewdriver } from 'react-icons/fa';
 
 export default function Meuble () {
     return (
         <div>
-        <h1 classNameName="meuble">Coucou</h1>
+      <span className="fab fa-facebook-f"><FaScrewdriver />
+</span>
         </div>
     )
 }

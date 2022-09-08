@@ -4,6 +4,7 @@ body{
 	background: #e7e7e9;
 }
 
+/* Pour le Header */
 .wrapper{
 	margin: 0;
 	padding: 0;
@@ -59,19 +60,20 @@ body{
 	width: 100%;
 	left: 0;
 	top: 58px;
-	padding: 25px 15px;
+	padding: 25px 35px;
 	display: flex;
 	justify-content: space-around;
 	visibility: hidden;
 	line-height: 24px;
 	border-top: 1px solid #e7e7e9;
 	z-index: 1;
-	transition:transform 1s;
 
 }
 
 .mega_menu ul li:hover{
 	background: white;
+	transform: translateY();
+	transition-delay: 0s, 0s, 0.3s;
 }
 
 .mega_menu ul li:hover a{
@@ -80,11 +82,12 @@ body{
 
 .mega_menu ul li:hover .sub_menu{
 	visibility: visible;
+	transform: translateY();
+	transition-delay: 0s, 0s, 0.3s;
 }
 .mega_menu ul li .sub_menu .col {
 	width: 25%;
 	padding: 0 105px;
-	
 }
 
 .mega_menu ul li .sub_menu .col img{
@@ -107,21 +110,35 @@ body{
   }
 }
 
-/* Pour la fléche dans le navbar */
-.arrow {
-  position: relative;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 7px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.col_navigation {
+ color: black !important;
+ position: relative !important;
+ display: inline-block !important;
 }
 
-/* Pour le Header */
+.col_navigation:hover {
+	 color: #ca914e !important;
+	 transform: translateX(3px)
+}
+
+.col_navigation::before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+.col_navigation:hover::before {
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+
 
 
   
