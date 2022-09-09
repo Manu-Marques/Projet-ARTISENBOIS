@@ -1,4 +1,10 @@
 import { NavLink } from 'react-router-dom';
+import  Salon  from '../../../src/Images/salon.jpg';
+import  Chambre  from '../../../src/Images/chambre.jpg';
+import  Cuisine  from '../../../src/Images/cuisine.jpg';
+import  Salle_De_Bain  from '../../../src/Images/salle de bain.jpg';
+import  Terrasse  from '../../../src/Images/terrasse.jpg';
+
 
 import './styles.scss';
 
@@ -8,24 +14,24 @@ export default function Header() {
       <div class="mega_menu">
         <ul>
           <div class="logo_menu">
-        <NavLink to="/"><img className="logo" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo ArtisenBois" /> </NavLink>
+        <NavLink to="/"><img className="logo" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo_ArtisenBois" /> </NavLink>
           </div>
           <li><NavLink to="/chambre/salons">Salons</NavLink>
           <div class="sub_menu">
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
+                <img src= {Salon} alt="salon"/>
               </div>
               <div class="col">
                 <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
                 </div>
               <div class="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Meuble</NavLink>
+              <NavLink to="/chambre/meuble" className="col_navigation">Buffet de rangement</NavLink>
               </div>
               <div class="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Table</NavLink>
+              <NavLink to="/chambre/table" className="col_navigation">Table</NavLink>
               </div>
               <div class="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
+              <NavLink to="/chambre/chaise" className="col_navigation">Chaise</NavLink>
               </div>
 
             </div>
@@ -34,19 +40,19 @@ export default function Header() {
           <li><NavLink to="/chambre">Chambres</NavLink>
             <div class="sub_menu">
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+                <img src={Chambre} alt="chambre"/>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink></div>
+                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
+                </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/lit" className="col_navigation">Lit</NavLink>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/dressing" className="col_navigation">Dressing</NavLink>
+              </div>
+              <div class="col">
+              <NavLink to="/chambre/commode" className="col_navigation">Commode</NavLink>
               </div>
             </div>
           </li>
@@ -54,67 +60,63 @@ export default function Header() {
           <li><NavLink to="/chambre">Salle de Bains</NavLink>
           <div class="sub_menu">
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+                <img src={Salle_De_Bain} alt="salle_de_bain"/>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <a href="#">sports</a>					</div>
+              <NavLink to="/chambre/meuble" className="col_navigation">Meuble vasque</NavLink>
+                </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
               </div>
+              <div class="col">
+                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
+                </div>
             </div>
           </li>
 
           <li><NavLink to="/chambre">Terrasse</NavLink>
           <div class="sub_menu">
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+                <img src={Terrasse} alt="terrasse"/>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <a href="#">sports</a>					</div>
-              <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
               </div>
+              <div class="col">
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
+              </div>
+              <div class="col">
+                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
+                </div>
             </div>
           </li>
 
-   <li><NavLink to="/chambre">Salons</NavLink>
+   <li><NavLink to="/chambre">Cuisine</NavLink>
           <div class="sub_menu">
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
+                <img src={Cuisine} alt="cuisine"/>
               </div>
               <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
+            </div>
+              <div class="col">
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
+            </div>
+              <div class="col">
+              <NavLink to="/chambre/meuble" className="col_navigation">Chaise</NavLink>
+              </div>
+              <div class="col">
+                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
                 </div>
-              <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
-              </div>
-              <div class="col">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="foot_Ball"/>
-                <p>football is unconditional love</p>
-              </div>
             </div>
           </li>
           <div className='search'>
-          <label for="site">
-          <input type="search" className="site_search" name="q"/>
-          <button className="site_button">Search</button>
-          </label>
           </div>
         </ul>
       </div>

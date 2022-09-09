@@ -12,8 +12,6 @@ body{
 	list-style: none;
 	width: 100%;
 	border-bottom: 1px solid #e7e7e9;
-	transition: all .6s ease-in-out;
-
 }
 
 .mega_menu{
@@ -67,7 +65,8 @@ body{
 	line-height: 24px;
 	border-top: 1px solid #e7e7e9;
 	z-index: 1;
-
+	transition : all 0.3s ease-out 0s, visibility 0s linear 0.3s;
+	
 }
 
 .mega_menu ul li:hover{
@@ -81,9 +80,11 @@ body{
 }
 
 .mega_menu ul li:hover .sub_menu{
+	opacity: 1;
 	visibility: visible;
 	transform: translateY();
 	transition-delay: 0s, 0s, 0.3s;
+	transition: all 1s ease-in;
 }
 .mega_menu ul li .sub_menu .col {
 	width: 25%;
@@ -94,12 +95,6 @@ body{
 	width: 250px;
 	height: 180px;
 	display: block;
-}
-
-.mega_menu ul li .sub_menu p{
-	color: #fff;
-	margin-top: 15px;
-	font-size: 14px;
 }
 
 .logo {
@@ -114,6 +109,7 @@ body{
  color: black !important;
  position: relative !important;
  display: inline-block !important;
+ white-space: nowrap;
 }
 
 .col_navigation:hover {
@@ -132,7 +128,7 @@ body{
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+    transition: transform .4s ease-in-out;
   }
 .col_navigation:hover::before {
 	transform-origin: left;
