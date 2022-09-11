@@ -22,13 +22,13 @@ export default function Header() {
                 <img src= {Salon} alt="salon"/>
               </div>
               <div class="col">
-                <NavLink to="/chambre/armoire" className="col_navigation">Armoire</NavLink>
+                <NavLink to="/chambre/bibliotheque" className="col_navigation">Bibliothéque</NavLink>
                 </div>
               <div class="col">
               <NavLink to="/chambre/meuble" className="col_navigation">Buffet de rangement</NavLink>
               </div>
               <div class="col">
-              <NavLink to="/chambre/table" className="col_navigation">Table</NavLink>
+              <NavLink to="/chambre/table_a_manger" className="col_navigation">Table à manger</NavLink>
               </div>
               <div class="col">
               <NavLink to="/chambre/chaise" className="col_navigation">Chaise</NavLink>
@@ -116,8 +116,6 @@ export default function Header() {
                 </div>
             </div>
           </li>
-          <div className='search'>
-          </div>
         </ul>
       </div>
     </div>
