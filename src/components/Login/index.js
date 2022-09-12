@@ -1,24 +1,25 @@
 import './styles.scss';
-import Form from 'react-validation/build/form';
-import Input from 'react-validation/build/input';
+import { NavLink } from 'react-router-dom';
+import { FaEnvelope} from 'react-icons/fa';
 
 export default function Login () {
     return (
-        <div className="login_container">
-            <div className="login">
-                <Form className="login_form" action="" method="post">
-                    <h1 className="login_title">Se connecter</h1>
-                    <div className="login_form_email">
-                    <label htmlFor="email" className="login_email">Email</label>
-                        <input type="text" name="email" className="login_input"/>
-                    </div>
-                    <div className="login_form_password">
-                    <label htmlFor="password" className="login_password">Mot de passe</label>
-                        <input type="password" name="password" className="login_input"/>
-                    </div>
-                    <Input className="login_submit" type="submit" value="Connexion" />
-                    </Form>
-                </div>
+        <div classNameName="login_container">
+       <div class="icons">
+      <NavLink className="iconContact" to="/contact">
+       <div className="layer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span className="fab fa-facebook-f"><FaEnvelope />
+</span>
+       </div>
+       <div className="text">
+          Contact
+       </div>
+      </NavLink>
+ </div>
             </div>
     )
 }
