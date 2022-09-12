@@ -1,0 +1,27 @@
+@import './../Styles/index.scss';
+
+.container2 {
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+padding: 20px;
+margin-top: 5%;
+display: flex;
+max-height: 80%;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+&_product {
+    position: block;
+ }
+
+ &_description {
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ &_details{
+    color: red;
+ }
+ &_line {
+    color: black;
+ }
+}
