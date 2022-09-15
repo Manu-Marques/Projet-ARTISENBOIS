@@ -15,27 +15,23 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
       font-weight: bold;
       margin-bottom: 20px;
       text-align: center;
-      text-transform: uppercase;
       letter-spacing: 5px;
       color: #733412;
       margin-top: 30px;
-      margin-left: 75%;
-  
+      margin-left: 5%;
+      position : absolute
 }
 
 &_product {
     position: block;
  }
 
- &_description {
-   padding-left: 35px;
-
- }
  &_details{
    color: #ca914e;
- }
+   padding: 8px 20px 8px 0;
+}
 
- &_line {
+&_line {
     color: black;
  }
 
@@ -51,6 +47,19 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
       font-weight: bold;
       margin-bottom: 20px;
  }
+ 
+ &_raiting {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5%;
+    
+}
+&_raiting_stars{
+    margin-top: 50px;
+
+ }
+ &_raiting_number{
+    margin-left: 10px;}
 }
 
 .container {
@@ -65,7 +74,7 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    border: 1px solid rgba(0, 0, 0, 0.274);
  }
  
- .bloc-tabs {
+ .bloc_tabs {
    display: flex;
  }
  .tabs {
@@ -84,12 +93,12 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    border-right: 1px solid rgba(0, 0, 0, 0.274);
  }
  
- .active-tabs  {
+ .active_tabs  {
    background: white;
    border-bottom: 1px solid transparent;
  }
  
- .active-tabs::before {
+ .active_tabs::before {
    content: "";
    display: block;
    position: absolute;
@@ -100,14 +109,10 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    height: 5px;
    background: #ca914e;
  }
- 
- 
- 
  button {
    border: none;
-   
  }
- .content-tabs {
+ .content_tabs {
    flex-grow : 1;
  }
  .content {
@@ -121,7 +126,6 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    padding: 0px 0 5px 0px;
  }
  .content hr {
-   width: 100px;
    height: 2px;
    background: #222;
    margin-bottom: 5px;
@@ -130,6 +134,16 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    width: 100%;
    height: 100%;
  }
- .active-content {
+ .active_content {
    display: block;
+ }
+
+ .container3 {
+   padding-left: 350px;
+   padding-top: 150px;
+ }
+ .container3 hr{
+   height: 2px;
+   background: #222;
+   margin-bottom: 5px;
  }
