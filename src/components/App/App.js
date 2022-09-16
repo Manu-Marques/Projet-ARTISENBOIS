@@ -1,15 +1,18 @@
-import Accueil from '../components/Accueil';
-import Header from '../components/Header';
-import Login from '../components/Login';
-import Contact from '../components/Contact';
-import Chambre from '../components/Chambre';
-import Product from '../components/Product';
+import './App.scss';
+
+import Accueil from '../Accueil';
+import Header from '../Header';
+import Login from '../Login';
+import Contact from '../Contact';
+import Chambre from '../Chambre';
+import Product from '../Product';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+
 function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
     <Header/>
 <Routes>
     <Route path="/" element={<Accueil/>} />

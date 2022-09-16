@@ -18,14 +18,14 @@ export default function Product() {
             <img className="container2_product" src={Armoire} alt="" />
             <div className="container2_description">
                 <h1 className="container2_title">Armoire</h1>
-                <div class="container2_raiting">
-                    <div class="container2_raiting_stars">
+                <div className="container2_raiting">
+                    <div className="container2_raiting_stars">
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={farStars} />
-                    <span class="container2_raiting_number">4.5</span>
+                    <span className="container2_raiting_number">4.5</span>
                      </div>
                 </div>
                 <div className="container3">
