@@ -1,6 +1,6 @@
 import './styles.scss';
 
-export default function Accueil () {
+export default function Home () {
     return (
         <div className="home">
             <div className="label">

@@ -9,10 +9,12 @@
 .label{
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 65%;
   transform: translate(-50%,-50%);
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 .container span{
   text-transform: uppercase;

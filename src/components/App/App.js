@@ -1,6 +1,6 @@
 import './App.scss';
 
-import Accueil from '../Accueil';
+import Accueil from '../Home';
 import Header from '../Header';
 import Login from '../Login';
 import Contact from '../Contact';
