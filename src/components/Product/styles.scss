@@ -6,24 +6,21 @@ max-width: 90%;
 margin: 0 auto;
 padding: 20px;
 margin-top: 5%;
-display: flex;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 margin-bottom: 15px;
+justify-content: space-around;
+display: flex;
 
 &_title{
       font-size: 30px;
       font-weight: bold;
-      margin-bottom: 20px;
-      text-align: center;
       letter-spacing: 5px;
       color: #733412;
       margin-top: 30px;
-      margin-left: 5%;
-      position : absolute
 }
 
 &_product {
-    position: block;
+  width: 45%;
  }
 
  &_details{
@@ -49,17 +46,22 @@ margin-bottom: 15px;
  }
  
  &_raiting {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 5%;
-    
+   max-width: 2%;
+   padding-bottom: 100px;
 }
-&_raiting_stars{
-    margin-top: 50px;
 
+ &_raiting_stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
  }
+
  &_raiting_number{
-    margin-left: 10px;}
+    margin-left: 10px;
+  }
+  
 }
 
 .container {
@@ -139,8 +141,8 @@ margin-bottom: 15px;
  }
 
  .container3 {
-   padding-left: 350px;
-   padding-top: 150px;
+    margin: 0 auto 0 100px;
+    width: 40%;
  }
  .container3 hr{
    height: 2px;
