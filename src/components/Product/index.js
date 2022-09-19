@@ -16,9 +16,9 @@ export default function Product() {
     return (
         <div className="container2">
             <img className="container2_product" src={Armoire} alt="" />
-            <div className="container2_description">
-                <h1 className="container2_title">Armoire</h1>
+                <div className="container3">
                 <div className="container2_raiting">
+                <h1 className="container2_title">Armoire</h1>
                     <div className="container2_raiting_stars">
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
@@ -28,7 +28,6 @@ export default function Product() {
                     <span className="container2_raiting_number">4.5</span>
                      </div>
                 </div>
-                <div className="container3">
                     <div className="bloc_tabs">
                         <button className={toggleState === 1 ? "tabs active_tabs" : "tabs"}
                             onClick={() => toggleTab(1)}>Description détaillée</button>
@@ -76,7 +75,6 @@ export default function Product() {
                         </p>
                         </div>
                     </div>
-                </div>
                 </div>
         </div>
     )
