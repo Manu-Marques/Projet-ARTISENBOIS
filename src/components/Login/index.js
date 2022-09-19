@@ -4,8 +4,8 @@ import { FaEnvelope} from 'react-icons/fa';
 
 export default function Login () {
     return (
-        <div classNameName="login_container">
-       <div class="icons">
+        <div className="login_container">
+       <div className="icons">
       <NavLink className="iconContact" to="/contact">
        <div className="layer">
           <span></span>

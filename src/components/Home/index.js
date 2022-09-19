@@ -1,9 +1,9 @@
 import './styles.scss';
 
-export default function Accueil () {
+export default function Home () {
     return (
         <div className="home">
-            <div className="container">
+            <div className="label">
             <span className="text1">Votre bonheur</span>
         <span className="text2">sur mesure</span>
         </div>

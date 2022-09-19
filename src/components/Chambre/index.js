@@ -12,7 +12,7 @@ export default function Chambre () {
 <h2>Title</h2>
 <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
 <div className="more">
-<NavLink to="/chambre/meuble"className="read-more">En savoir plus</NavLink>
+<NavLink to="/chambre/product"className="read-more">En savoir plus</NavLink>
 <div className="icon-links">
 </div>
 </div>

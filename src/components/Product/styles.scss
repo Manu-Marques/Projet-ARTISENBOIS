@@ -1,0 +1,151 @@
+@import './../Styles/index.scss';
+
+.container2 {
+background-color: white;
+max-width: 90%;
+margin: 0 auto;
+padding: 20px;
+margin-top: 5%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-bottom: 15px;
+justify-content: space-around;
+display: flex;
+
+&_title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: #733412;
+      margin-top: 30px;
+}
+
+&_product {
+  width: 45%;
+ }
+
+ &_details{
+   color: #ca914e;
+   padding: 8px 20px 8px 0;
+}
+
+&_line {
+    color: black;
+ }
+
+ &_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+ }
+
+ &_text{
+      font-weight: bold;
+      margin-bottom: 20px;
+ }
+ 
+ &_raiting {
+   max-width: 2%;
+   padding-bottom: 100px;
+}
+
+ &_raiting_stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+ }
+
+ &_raiting_number{
+    margin-left: 10px;
+  }
+  
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   width: 500px;
+   height: 300px;
+   background: #f1f1f1;
+   margin: 100px auto 0;
+   word-break: break-all;
+   border: 1px solid rgba(0, 0, 0, 0.274);
+ }
+ 
+ .bloc_tabs {
+   display: flex;
+ }
+ .tabs {
+   white-space: nowrap;
+   padding: 15px;
+   text-align: center;
+   width: 50%;
+   background: rgba(128, 128, 128, 0.075);
+   cursor: pointer;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+   box-sizing: content-box;
+   position: relative;
+   outline: none;
+ }
+ .tabs:not(:last-child){
+   border-right: 1px solid rgba(0, 0, 0, 0.274);
+ }
+ 
+ .active_tabs  {
+   background: white;
+   border-bottom: 1px solid transparent;
+ }
+ 
+ .active_tabs::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: calc(100% + 2px);
+   height: 5px;
+   background: #ca914e;
+ }
+ button {
+   border: none;
+ }
+ .content_tabs {
+   flex-grow : 1;
+ }
+ .content {
+   background: white;
+   padding: 20px;
+   width: 100%;
+   height: 100%;
+   display: none;
+ }
+ .content h2 {
+   padding: 0px 0 5px 0px;
+ }
+ .content hr {
+   height: 2px;
+   background: #222;
+   margin-bottom: 5px;
+ }
+ .content p {
+   width: 100%;
+   height: 100%;
+ }
+ .active_content {
+   display: block;
+ }
+
+ .container3 {
+    margin: 0 auto 0 100px;
+    width: 40%;
+ }
+ .container3 hr{
+   height: 2px;
+   background: #222;
+   margin-bottom: 5px;
+ }
