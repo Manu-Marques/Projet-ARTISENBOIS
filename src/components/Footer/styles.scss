@@ -1,11 +1,29 @@
 @import './../Styles/index.scss';
 
-.footer{
-    background: white;
-    color: black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between ;
-    bottom: 0;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+.text-small {
+    font-size: 0.9rem;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  .form-control {
+    background: #212529;
+    border-color: #545454;
+  }
+  
+  .form-control:focus {
+    background: #212529;
+  }
+  
+  footer {
+    background: #212529;
+  }
+  
