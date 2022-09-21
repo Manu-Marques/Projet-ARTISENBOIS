@@ -1,6 +1,6 @@
 import './styles.scss';
 import Armoire from '../../../src/Images/armoire.jpg';
-import { useState } from 'react';
+import { useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStars } from '@fortawesome/free-regular-svg-icons';
@@ -12,6 +12,8 @@ export default function Product() {
     const toggleTab = (index) => {
         setToggleState(index);
     };
+
+
 
     return (
         <div className="container2">
