@@ -1,25 +1,32 @@
 import './styles.scss';
-import { NavLink } from 'react-router-dom';
-import { FaEnvelope} from 'react-icons/fa';
+import { useState, useEffect } from 'react';
 
-export default function Login () {
-    return (
-        <div className="login_container">
-       <div className="icons">
-      <NavLink className="iconContact" to="/contact">
-       <div className="layer">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span className="fab fa-facebook-f"><FaEnvelope />
-</span>
-       </div>
-       <div className="text">
-          Contact
-       </div>
-      </NavLink>
- </div>
+ export default function Login () {
+    function loadActivity() {
+        fetch("https://api.unsplash.com/photos/?client_id=OmTR2D0ODw2hpL2cC9uicLrdFY-Tnds-TZ3Qg3SVpTk")
+            .then((response) => response.json())
+            .then((data) => {
+                //setimage(data);
+                 console.log(data);
+            });
+            }
+    
+    const [image, setimage] = useState([]);
+    useEffect(() => {
+        loadActivity();
+    },  []);
+
+    function ShowImage() {
+        return (
+            <div>
+                <img src={image.urls.regular} alt={image.alt_description} />
             </div>
+        )
+    }
+
+    return (
+<div>
+       <h1>{image}</h1>
+       </div>
     )
 }
