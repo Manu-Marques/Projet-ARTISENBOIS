@@ -6,7 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStars } from '@fortawesome/free-regular-svg-icons';
 
 
-export default function Product() {
+export default function Product({result}) {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {

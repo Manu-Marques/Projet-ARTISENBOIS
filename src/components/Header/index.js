@@ -37,8 +37,8 @@ export default function Header() {
             </div>
           </li>
           
-          {/* <li><NavLink to="/login">Login</NavLink>
-          </li> */}
+           <li><NavLink to="/login">Login</NavLink>
+          </li> 
 
     
           <li><NavLink to="/chambre">Chambres</NavLink>
