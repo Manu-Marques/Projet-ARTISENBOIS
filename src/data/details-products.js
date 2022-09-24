@@ -1,5 +1,6 @@
-export default [
-    {
+export default {
+    sallons : [
+        {
         id: "1",
         //image: Armoire,
         title: "Bibliothéque en chêne",
@@ -24,7 +25,7 @@ export default [
     },
     {
         id: 3,
-        title: "Chaise",
+        title: "Table à manger",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         rating: 4.5,
         type: "Chêne",
@@ -35,7 +36,7 @@ export default [
     },
     {
         id: 4,
-        title: "Bureau",
+        title: "Chaise en bois",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -45,7 +46,10 @@ export default [
         color: "Marron",
         doors: "2",
     },
-    {
+    ],
+    chambres :
+    [
+        {
         id: 5,
         title: "Lit",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
@@ -81,6 +85,9 @@ export default [
         color: "Marron",
         doors: "2",
     },
+],
+salle_de_bains :
+[
     {
         id: 8,
         title: "Meuble de rangement",
@@ -93,7 +100,7 @@ export default [
         color: "Marron",
         doors: "2",
     },
-    {
+        {
         id: 9,
         title: "Meuble de salle de bain",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
@@ -117,6 +124,9 @@ export default [
         color: "Marron",
         doors: "2",
     },
+],
+    exterieur :
+    [
     {
         id: 11,
         title: "Meuble de chambre",
@@ -165,6 +175,9 @@ export default [
         color: "Marron",
         doors: "2",
     },
+],
+    cuisine:
+    [
     {
         id: 15,
         title: "Meuble de salle de bain",
@@ -213,4 +226,5 @@ export default [
         color: "Marron",
         doors: "2",
     },
-];
+],
+};
