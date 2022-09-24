@@ -6,7 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStars } from '@fortawesome/free-regular-svg-icons';
 
 
-export default function Product({result}) {
+export default function Product({results}) {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -53,11 +53,15 @@ export default function Product({result}) {
 
                         <div className={toggleState === 2 ? "content  active_content" : "content"}>
                             <ul className="content_table">
-                                            <li className="container2_details">Type de bois : <span className="container2_line"> Chêne</span></li>
+                                {results.results?.map((result) => (
+                                            <li key={result.id} className="container2_details">Type de bois : <span className="container2_line">{result.type}</span></li>
+                                            ))} 
+
                                             <li className="container2_details">Dimensions : <span className="container2_line">200x100x50</span></li>
                                             <li className="container2_details">Poids : <span className="container2_line">100kg</span></li>
                                             <li className="container2_details">Couleur : <span className="container2_line">Marron</span></li>
                                             <li className="container2_details">Nombre de portes : <span className="container2_line">2</span></li>
+                                            
                         </ul>
                         </div>
                         <div className={toggleState === 3 ? "content  active_content" : "content"}>

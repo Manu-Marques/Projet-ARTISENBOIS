@@ -1,38 +1,33 @@
 import './styles.scss';
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
  export default function Login (results) {
-    // function loadActivity() {
-    //     fetch("https://api.unsplash.com/photos/?client_id=OmTR2D0ODw2hpL2cC9uicLrdFY-Tnds-TZ3Qg3SVpTk")
-    //         .then((response) => response.json())
-    //         .then((data) => {
-    //             //setimage(data);
-    //              console.log(data);
-    //         });
-    //         }
-    
-    // const [image, setimage] = useState([]);
-    // useEffect(() => {
-    //     loadActivity();
-    // },  []);
-
-    // function ShowImage() {
-    //     return (
-    //         <div>
-    //             <img src={image.urls.regular} alt={image.alt_description} />
-    //         </div>
-    //     )
-    // }
-
     return (
-<div>
-       <ul class="tryout">
-        {results.results.map((result) => (
-            <li key={result.id}>
-                <p>{result.title}</p>
-            </li>
-        ))}
-       </ul>
+<div className="main">
+    <h1>Chambre</h1>
+    <div class="main_container">
+        <div className="main_row">
+            {
+                 results.results?.map((result) => {
+                    return (
+                        <div className="main_image">
+                        <img className="main_img" src="https://zupimages.net/up/22/35/f2n4.jpg" alt="" />
+                        <div key={result.id} className="main_details">
+                        <h2>{result.title}</h2>
+                        <p className="main_text">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
+                        <div className="main_more">
+                        <NavLink to="/chambre/product"className="main_read-more">En savoir plus</NavLink>
+                        <div className="main_icon-links">
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    )
+                })
+            }
+            </div>
+    </div>
        </div>
     )
 }

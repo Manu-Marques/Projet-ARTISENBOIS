@@ -9,7 +9,7 @@ import Product from '../Product';
 import React from 'react';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
-import Data from '../../data/details-products';
+import data from '../../data/details-products';
 
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
     <Header/>
 <Routes>
     <Route path="/" element={<Accueil/>} />
-    <Route path="/login" element={<Login results={Data} />} />
+    <Route path="/login" element={<Login results={data.sallons} />} />
     <Route path="/contact" element={<Contact />} />
-    <Route path="/chambre" element={<Chambre />} />
-    <Route path="/chambre/product" element={<Product  results={Data}/>} />
+    <Route path="/chambre" element={<Chambre results={data.sallons}/>} />
+    <Route path="/chambre/product" element={<Product  results={data}/>} />
 </Routes>
     <Footer/>
     </div>
