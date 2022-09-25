@@ -16,29 +16,29 @@ export default function Header() {
           <div className="logo_menu">
         <NavLink to="/"><img className="logo" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo_ArtisenBois" /> </NavLink>
           </div>
-          <li><NavLink to="/chambre/salons">Salons</NavLink>
+          <li><NavLink to="/salons">Salons</NavLink>
           <div className="sub_menu">
               <div className="col">
                 <img src= {Salon} alt="salon"/>
               </div>
               <div className="col">
-                <NavLink to="/chambre/bibliotheque" className="col_navigation">Bibliothéque en chêne</NavLink>
+                <NavLink to="/salon/bibliotheque-en-chene" className="col_navigation">Bibliothéque en chêne</NavLink>
                 </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Buffet de rangement</NavLink>
+              <NavLink to="/salon/buffet-de-rangement" className="col_navigation">Buffet de rangement</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/chambre/table_a_manger" className="col_navigation">Table à manger</NavLink>
+              <NavLink to="/salon/table-a-manger" className="col_navigation">Table à manger</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/chambre/chaise" className="col_navigation">Chaise en bois</NavLink>
+              <NavLink to="/salon/chaise-en-bois" className="col_navigation">Chaise en bois</NavLink>
               </div>
 
             </div>
           </li>
           
-           <li><NavLink to="/login">Login</NavLink>
-          </li> 
+           {/* <li><NavLink to="/login">Login</NavLink>
+          </li>  */}
 
     
           <li><NavLink to="/chambre">Chambres</NavLink>
@@ -47,10 +47,10 @@ export default function Header() {
                 <img src={Chambre} alt="chambre"/>
               </div>
               <div className="col">
-                <NavLink to="/chambre/armoire" className="col_navigation">Armoire penderie</NavLink>
+                <NavLink to="/chambre/armoire-panderie" className="col_navigation">Armoire penderie</NavLink>
                 </div>
               <div className="col">
-              <NavLink to="/chambre/lit" className="col_navigation">Lit adulte</NavLink>
+              <NavLink to="/chambre/lit-adulte" className="col_navigation">Lit adulte</NavLink>
               </div>
               <div className="col">
               <NavLink to="/chambre/dressing" className="col_navigation">Dressing</NavLink>
@@ -58,59 +58,59 @@ export default function Header() {
             </div>
           </li>
 
-          <li><NavLink to="/chambre">Salle de Bains</NavLink>
+          <li><NavLink to="/salle-de-bains">Salle de Bains</NavLink>
           <div className="sub_menu">
               <div className="col">
                 <img src={Salle_De_Bain} alt="salle_de_bain"/>
               </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Meuble vasque</NavLink>
+              <NavLink to="/salle-de-bain/meuble-vasque" className="col_navigation">Meuble vasque</NavLink>
                 </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Colonne</NavLink>
+              <NavLink to="/salle-de-bain/colonne" className="col_navigation">Colonne</NavLink>
               </div>
               <div className="col">
-                <NavLink to="/chambre/armoire" className="col_navigation">Armoire à miroir</NavLink>
+                <NavLink to="/salle-de-bain/armoire-a-miroir" className="col_navigation">Armoire à miroir</NavLink>
                 </div>
             </div>
           </li>
 
-          <li><NavLink to="/chambre">Extérieur</NavLink>
+          <li><NavLink to="/exterieur">Extérieur</NavLink>
           <div className="sub_menu">
               <div className="col">
                 <img src={Terrasse} alt="terrasse"/>
               </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Terrasse</NavLink>
+              <NavLink to="/exterieur/terrasse" className="col_navigation">Terrasse</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Chaise de jardin</NavLink>
+              <NavLink to="/exterieur/chaise-de-jardin" className="col_navigation">Chaise de jardin</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Table rectangulaire </NavLink>
+              <NavLink to="/exterieur/table-rectangulaire" className="col_navigation">Table rectangulaire </NavLink>
               </div>
               <div className="col">
-                <NavLink to="/chambre/armoire" className="col_navigation">Cabanon</NavLink>
+                <NavLink to="/exterieur/cabanon" className="col_navigation">Cabanon</NavLink>
                 </div>
             </div>
           </li>
 
-   <li><NavLink to="/chambre">Cuisine</NavLink>
+   <li><NavLink to="/cuisine">Cuisine</NavLink>
           <div className="sub_menu">
               <div className="col">
                 <img src={Cuisine} alt="cuisine"/>
               </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Buffet</NavLink>
+              <NavLink to="/cuisine/buffet" className="col_navigation">Buffet</NavLink>
             </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Meuble bois massif</NavLink>
+              <NavLink to="/cuisine/meuble-bois-massif" className="col_navigation">Meuble bois massif</NavLink>
             </div>
               <div className="col">
-              <NavLink to="/chambre/meuble" className="col_navigation">Plan de travail</NavLink>
+              <NavLink to="/cuisine/plan-de-travail" className="col_navigation">Plan de travail</NavLink>
               </div>
               <div className="col">
-                <NavLink to="/chambre/armoire" className="col_navigation">Meuble rangement</NavLink>
+                <NavLink to="/cuisine/meuble-rangement" className="col_navigation">Meuble rangement</NavLink>
                 </div>
             </div>
           </li>
