@@ -1,7 +1,7 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 
-export default function Chambre (results) {
+export default function Sallons (results) {
   return (
 <div className="main">
   <h1>Chambre</h1>

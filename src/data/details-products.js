@@ -1,5 +1,5 @@
 export default {
-    sallons : [
+    salons : [
         {
         id: "1",
         //image: Armoire,
