@@ -1,15 +1,14 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 
-export default function Sallons (results) {
-  
+export default function Exterieurs (results) {
   return (
 <div className="main">
-  <h1>Sallons</h1>
+  <h1>Chambre</h1>
   <div className="row1">
       {
-           results.results?.map((result) => {
-              return (
+           results?.map && results.map((result) => {
+            return (
                   <div className="image">
                   <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="" />
                   <div key={result.id} className="details">

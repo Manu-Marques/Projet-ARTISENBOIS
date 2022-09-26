@@ -41,10 +41,10 @@ export default function Header() {
           </li>  */}
 
     
-          <li><NavLink to="/chambre">Chambres</NavLink>
+          <li><NavLink to="/chambres">Chambres</NavLink>
             <div className="sub_menu">
               <div className="col">
-                <img src={Chambre} alt="chambre"/>
+                <img src={Chambre} alt="chambres"/>
               </div>
               <div className="col">
                 <NavLink to="/chambre/armoire-panderie" className="col_navigation">Armoire penderie</NavLink>
@@ -75,22 +75,22 @@ export default function Header() {
             </div>
           </li>
 
-          <li><NavLink to="/exterieur">Extérieur</NavLink>
+          <li><NavLink to="/exterieurs">Extérieurs</NavLink>
           <div className="sub_menu">
               <div className="col">
                 <img src={Terrasse} alt="terrasse"/>
               </div>
               <div className="col">
-              <NavLink to="/exterieur/terrasse" className="col_navigation">Terrasse</NavLink>
+              <NavLink to="/exterieurs/terrasse" className="col_navigation">Terrasse</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/exterieur/chaise-de-jardin" className="col_navigation">Chaise de jardin</NavLink>
+              <NavLink to="/exterieurs/chaise-de-jardin" className="col_navigation">Chaise de jardin</NavLink>
               </div>
               <div className="col">
-              <NavLink to="/exterieur/table-rectangulaire" className="col_navigation">Table rectangulaire </NavLink>
+              <NavLink to="/exterieurs/table-rectangulaire" className="col_navigation">Table rectangulaire </NavLink>
               </div>
               <div className="col">
-                <NavLink to="/exterieur/cabanon" className="col_navigation">Cabanon</NavLink>
+                <NavLink to="/exterieurs/cabanon" className="col_navigation">Cabanon</NavLink>
                 </div>
             </div>
           </li>
@@ -98,7 +98,7 @@ export default function Header() {
    <li><NavLink to="/cuisine">Cuisine</NavLink>
           <div className="sub_menu">
               <div className="col">
-                <img src={Cuisine} alt="cuisine"/>
+                <img src={Cuisine} alt="cuisines"/>
               </div>
               <div className="col">
               <NavLink to="/cuisine/buffet" className="col_navigation">Buffet</NavLink>
