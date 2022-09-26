@@ -1,11 +1,10 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 
-export default function Sallons (results) {
-  
+export default function Cuisines (results) {
   return (
 <div className="main">
-  <h1>Sallons</h1>
+  <h1>Cuisine</h1>
   <div className="row1">
       {
            results.results?.map((result) => {

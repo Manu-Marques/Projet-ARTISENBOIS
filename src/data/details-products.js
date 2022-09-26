@@ -125,7 +125,7 @@ salle_de_bains :
         doors: "2",
     },
 ],
-    exterieur :
+    exterieurs :
     [
     {
         id: 11,
