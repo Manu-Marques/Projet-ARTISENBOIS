@@ -1,5 +1,4 @@
 import './styles.scss';
-import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
  export default function Login (results) {

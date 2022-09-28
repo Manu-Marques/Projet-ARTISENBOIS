@@ -1,4 +1,4 @@
-export default {
+const data = {
     salons : [
         {
         id: "1",
@@ -51,7 +51,7 @@ export default {
     [
         {
         id: 5,
-        title: "Lit",
+        title: "Armoire penderie",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -63,7 +63,7 @@ export default {
     },
     {
         id: 6,
-        title: "Canapé",
+        title: "Lit adulte",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -75,7 +75,19 @@ export default {
     },
     {
         id: 7,
-        title: "Meuble TV",
+        title: "Dressing",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        price: 100,
+        rating: 4.5,
+        type: "Chêne",
+        dimensions: "200x100x50",
+        weight: "100kg",
+        color: "Marron",
+        doors: "2",
+    },
+    {
+        id: 8,
+        title: "Table de chevet",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -89,8 +101,8 @@ export default {
 salle_de_bains :
 [
     {
-        id: 8,
-        title: "Meuble de rangement",
+        id: 7,
+        title: "Meuble vasque",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -101,8 +113,8 @@ salle_de_bains :
         doors: "2",
     },
         {
-        id: 9,
-        title: "Meuble de salle de bain",
+        id: 8,
+        title: "Colonne",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -113,8 +125,8 @@ salle_de_bains :
         doors: "2",
     },
     {
-        id: 10,
-        title: "Meuble de cuisine",
+        id: 9,
+        title: "Armoire à mirroir",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -128,8 +140,8 @@ salle_de_bains :
     exterieurs :
     [
     {
-        id: 11,
-        title: "Meuble de chambre",
+        id: 10,
+        title: "Terrasse",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -141,7 +153,7 @@ salle_de_bains :
     },
     {
         id: 12,
-        title: "Meuble de salon",
+        title: "Chaise de jardin",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -153,7 +165,7 @@ salle_de_bains :
     },
     {
         id: 13,
-        title: "Meuble de bureau",
+        title: "Table rectangulaire",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -165,7 +177,7 @@ salle_de_bains :
     },
     {
         id: 14,
-        title: "Meuble de rangement",
+        title: "Cabanon",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -176,11 +188,11 @@ salle_de_bains :
         doors: "2",
     },
 ],
-    cuisine:
+    cuisines:
     [
     {
         id: 15,
-        title: "Meuble de salle de bain",
+        title: "Buffet",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -192,7 +204,7 @@ salle_de_bains :
     },
     {
         id: 16,
-        title: "Meuble de cuisine",
+        title: "Meuble en bois",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -204,7 +216,7 @@ salle_de_bains :
     },
     {
         id: 17,
-        title: "Meuble de chambre",
+        title: "Plan de travail",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -216,7 +228,7 @@ salle_de_bains :
     },
     {
         id: 18,
-        title: "Meuble de salon",
+        title: "Meuble rangement",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         price: 100,
         rating: 4.5,
@@ -228,3 +240,5 @@ salle_de_bains :
     },
 ],
 };
+
+export default data;
