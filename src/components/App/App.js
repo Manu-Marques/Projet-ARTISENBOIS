@@ -18,20 +18,20 @@ import data from '../../data/details-products';
 function App() {
   return (
     <div className="App">
-    <Header/>
-<Routes>
-    <Route path="/" element={<Accueil/>} />
-    {/* <Route path="/login" element={<Login results={data.salons} />} /> */}
-    <Route path="/contact" element={<Contact />} />
-    <Route path="/salons" element={<Salons results={data.salons}/>} />
-    <Route path="/cuisines" element={<Cuisines  results={data.cuisine}/>} />
-    <Route path="/chambres" element={<Chambres  results={data.chambres}/>} />
-    <Route path="/exterieurs" element={<Exterieurs  results={data.exterieurs}/>} />
-    <Route path="/salle-de-bains" element={<SalleDeBains  results={data}/>} />
-    <Route path="/product/:id" element={<Product results={data}/>} />
-    <Route path="/chambre/product" element={<Product  results={data}/>} />
-</Routes>
-    <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        {/* <Route path="/login" element={<Login results={data.salons} />} /> */}
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/salons" element={<Salons results={data.salons} />} />
+        <Route path="/cuisines" element={<Cuisines results={data.cuisines} />} />
+        <Route path="/chambres" element={<Chambres results={data.chambres} />} />
+        <Route path="/exterieurs" element={<Exterieurs results={data.exterieurs} />} />
+        <Route path="/salle-de-bains" element={<SalleDeBains results={data.salle_de_bains} />} />
+        <Route path="/product/:id" element={<Product results={data} />} />
+        <Route path="/chambre/product" element={<Product results={data} />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
