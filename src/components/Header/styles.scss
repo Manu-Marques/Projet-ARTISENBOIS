@@ -111,11 +111,13 @@ body{
  position: relative !important;
  display: inline-block !important;
  white-space: nowrap;
+
 }
 
 .col_navigation:hover {
 	 color: #ca914e !important;
-	 transform: translateX(2px)
+	 transform: translateX(2px);
+	position: relative !important;
 }
 
 .col_navigation::before {
