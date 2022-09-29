@@ -21,7 +21,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        {/* <Route path="/login" element={<Login results={data.salons} />} /> */}
+        {/* <Route path="/login" element={<Login />} />  */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/salons" element={<Salons results={data.salons} />} />
         <Route path="/cuisines" element={<Cuisines results={data.cuisines} />} />

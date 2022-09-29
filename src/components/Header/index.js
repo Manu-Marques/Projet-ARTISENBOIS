@@ -4,6 +4,7 @@ import Chambre from '../../../src/assets/chambre.jpg';
 import Cuisine from '../../../src/assets/cuisine.jpg';
 import Salle_De_Bain from '../../../src/assets/salle de bain.jpg';
 import Terrasse from '../../../src/assets/terrasse.jpg';
+import Logo from '../../../src/assets/logo2.jpg';
 
 
 import './styles.scss';
@@ -14,7 +15,7 @@ export default function Header() {
       <div className="mega_menu">
         <ul>
           <div className="logo_menu">
-            <NavLink to="/"><img className="logo" src="https://zupimages.net/up/22/32/h67g.jpg" alt="Logo_ArtisenBois" /> </NavLink>
+            <NavLink to="/"><img className="logo" src={Logo} alt="Logo_ArtisenBois" /> </NavLink>
           </div>
           <li><NavLink to="/salons">Salons</NavLink>
             <div className="sub_menu">
@@ -55,6 +56,10 @@ export default function Header() {
               <div className="col">
                 <NavLink to="/chambre/dressing" className="col_navigation">Dressing</NavLink>
               </div>
+              <div className="col">
+                <NavLink to="/chambre/dressing" className="col_navigation">Table de chevet</NavLink>
+              </div>
+
             </div>
           </li>
 
@@ -95,7 +100,7 @@ export default function Header() {
             </div>
           </li>
 
-          <li><NavLink to="/cuisines">Cuisine</NavLink>
+          <li><NavLink to="/cuisines">Cuisines</NavLink>
             <div className="sub_menu">
               <div className="col">
                 <img src={Cuisine} alt="cuisines" />

@@ -40,7 +40,7 @@ export default function Product({ results }) {
 
                 <div className="content_tabs">
                     <div className={toggleState === 1 ? "content  active_content" : "content"}>
-                        <div class="content_text">
+                        <div className="content_text">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla
                                 veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen
@@ -63,7 +63,7 @@ export default function Product({ results }) {
                         </ul>
                     </div>
                     <div className={toggleState === 3 ? "content  active_content" : "content"}>
-                        <div class="content_text">
+                        <div className="content_text">
                             <p>
                                 Question : Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>

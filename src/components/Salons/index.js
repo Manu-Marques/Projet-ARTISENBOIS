@@ -1,5 +1,7 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
+import Bureau from '../../../src/assets/bureau.jpg';
+
 
 export default function Sallons(results) {
 
@@ -11,7 +13,7 @@ export default function Sallons(results) {
           results.results?.map((result) => {
             return (
               <div key={result.id} className="image">
-                <img src="https://zupimages.net/up/22/35/f2n4.jpg" alt="" />
+                <img src={Bureau} alt="" />
                 <div className="details">
                   <h2>{result.title}</h2>
                   <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>

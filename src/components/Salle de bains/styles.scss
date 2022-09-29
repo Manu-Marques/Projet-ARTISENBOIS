@@ -7,7 +7,7 @@
 .main h1 {
     text-align: center;
 }
-.row {
+.row1 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@
 
 .image:hover .details p{
     opacity: 1;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
 }
 
 .more {
