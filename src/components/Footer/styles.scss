@@ -1,9 +1,15 @@
 @import './../Styles/index.scss';
 
+
+.footer{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
 .footer-basic {
-  padding:40px 0;
+  padding: 20px 0;
   background-color:#ffffff;
   color:black;
+  border-top: 30px;
 }
 
 .footer-basic ul {

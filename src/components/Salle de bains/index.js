@@ -18,7 +18,7 @@ export default function SalledeBains(results) {
                   <h2>{result.title}</h2>
                   <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
                   <div className="more">
-                    <NavLink to="/chambre/product" className="read-more">En savoir plus</NavLink>
+                    <NavLink to={`/salle_de_bains/product/${result.title}`} className="read-more">En savoir plus</NavLink>
                     <div className="icon-links">
                     </div>
                   </div>
