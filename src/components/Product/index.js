@@ -15,6 +15,9 @@ export default function Product({ results }) {
     };
         const { id } = useParams();
         const product = results.filter((product) => product.title === id);
+ 
+        console.log('je suis le filter', product);
+        console.log('je suis lid', id);
 
     return (
         <div className="container2">
@@ -56,11 +59,11 @@ export default function Product({ results }) {
                               product.map((result) => {
                                 return (
                                 <ul key={result.id} className="content_table">
-                            <li className="container2_details">Type de bois : <span className="container2_line"></span>{result.title}</li>
-                            <li className="container2_details">Dimensions : <span className="container2_line">200x100x50</span></li>
-                            <li className="container2_details">Poids : <span className="container2_line">100kg</span></li>
-                            <li className="container2_details">Couleur : <span className="container2_line">Marron</span></li>
-                            <li className="container2_details">Nombre de portes : <span className="container2_line">2</span></li>
+                            <li className="container2_details">Type de bois : <span className="container2_line">{result.type}</span></li>
+                            <li className="container2_details">Dimensions : <span className="container2_line">{result.dimensions}</span></li>
+                            <li className="container2_details">Poids : <span className="container2_line">{result.weight}</span></li>
+                            <li className="container2_details">Couleur : <span className="container2_line">{result.color}</span></li>
+                            <li className="container2_details">Nombre de portes : <span className="container2_line">{result.doors}</span></li>
                         </ul>
  )    
                     }
