@@ -1,4 +1,5 @@
 import './styles.scss';
+import Accueil from '../../../src/assets/Accueil.jpg';
 
 export default function Home() {
     return (
@@ -7,7 +8,7 @@ export default function Home() {
                 <span className="text1">Votre bonheur</span>
                 <span className="text2">sur mesure</span>
             </div>
-            <img className="home_logo" src='https://zupimages.net/up/22/35/ehhg.jpg' alt="Logo ArtisenBois" />
+            <img className="home_logo" src={Accueil} alt="Logo ArtisenBois" />
         </div>
     )
 }

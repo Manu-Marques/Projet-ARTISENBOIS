@@ -15,7 +15,10 @@ import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
 import data from '../../data/details-products';
 
-function App() {
+
+export default function App() {
+
+
   return (
     <div className="App">
       <Header />
@@ -23,17 +26,21 @@ function App() {
         <Route path="/" element={<Accueil />} />
         {/* <Route path="/login" element={<Login />} />  */}
         <Route path="/contact" element={<Contact />} />
+        
         <Route path="/salons" element={<Salons results={data.salons} />} />
-        <Route path="/cuisines" element={<Cuisines results={data.cuisines} />} />
         <Route path="/chambres" element={<Chambres results={data.chambres} />} />
-        <Route path="/exterieurs" element={<Exterieurs results={data.exterieurs} />} />
         <Route path="/salle-de-bains" element={<SalleDeBains results={data.salle_de_bains} />} />
-        <Route path="/product/:id" element={<Product results={data} />} />
-        <Route path="/chambre/product" element={<Product results={data} />} />
+        <Route path="/exterieurs" element={<Exterieurs results={data.exterieurs} />} />
+        <Route path="/cuisines" element={<Cuisines results={data.cuisines} />} />
+        
+        
+        <Route path="/salons/product/:id" element={<Product results={data.salons} />} />
+        <Route path="/chambres/product/:id" element={<Product results={data.chambres} />} />
+        <Route path="/salle-de-bains/product/:id" element={<Product results={data.salle_de_bains} />} />
+        <Route path="/exterieurs/product/:id" element={<Product results={data.exterieurs} />} />
+        <Route path="/cuisines/product/:id" element={<Product results={data.cuisines} />} />
       </Routes>
       <Footer />
     </div>
   );
 }
-
-export default App;
