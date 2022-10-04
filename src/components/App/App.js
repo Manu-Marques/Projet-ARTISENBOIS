@@ -24,7 +24,6 @@ export default function App() {
       <Header results={data} />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        {/* <Route path="/login" element={<Login />} />  */}
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/salons" element={<Salons results={data.salons} />} />

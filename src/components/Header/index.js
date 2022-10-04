@@ -17,7 +17,7 @@ export default function Header(data) {
         <ul>
           <div className="logo_menu">
             <NavLink to="/">
-              <img className="logo" src={Logo} alt="Logo_ArtisenBois" />{" "}
+              <img className="logo" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
 
