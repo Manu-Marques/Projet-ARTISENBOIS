@@ -16,15 +16,19 @@ export default function Sallons(results) {
                 <img src={Bureau} alt="" />
                 <div className="details">
                   <h2>{result.title}</h2>
-                  <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
+                  <p>{result.description}</p>
                   <div className="more">
-                    <NavLink to={`/salons/product/${result.title}`} className="read-more">En savoir plus</NavLink>
-                    <div className="icon-links">
-                    </div>
+                    <NavLink
+                      to={`/salons/product/${result.title}`}
+                      className="read-more"
+                    >
+                      En savoir plus
+                    </NavLink>
+                    <div className="icon-links"></div>
                   </div>
                 </div>
               </div>
-            )
+            );
           })
         }
       </div>
