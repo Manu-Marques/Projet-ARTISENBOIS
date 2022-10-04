@@ -10,25 +10,27 @@ export default function SalledeBains(results) {
     <div className="main">
       <h1>Salle de Bains</h1>
       <div className="row1">
-        {
-          results.results?.map((result) => {
-            return (
-              <div key={result.id} className="image">
-                <img src={Bureau} alt="" />
-                <div className="details">
-                  <h2>{result.title}</h2>
-                  <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
-                  <div className="more">
-                    <NavLink to={`/salle-de-bains/product/${result.title}`} className="read-more">En savoir plus</NavLink>
-                    <div className="icon-links">
-                    </div>
-                  </div>
+        {results.results?.map((result) => {
+          return (
+            <div key={result.id} className="image">
+              <img src={Bureau} alt="" />
+              <div className="details">
+                <h2>{result.title}</h2>
+                <p>{result.description}</p>
+                <div className="more">
+                  <NavLink
+                    to={`/salle-de-bains/product/${result.title}`}
+                    className="read-more"
+                  >
+                    En savoir plus
+                  </NavLink>
+                  <div className="icon-links"></div>
                 </div>
               </div>
-            )
-          })
-        }
+            </div>
+          );
+        })}
       </div>
     </div>
-  )
+  );
 }
