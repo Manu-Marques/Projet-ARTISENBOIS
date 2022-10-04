@@ -2,10 +2,14 @@
 
 
 .footer{
-    
+   position: absolute;
+   bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 20px;
 }
 .footer-basic {
-  background-color:#ffffff;
   color:black;
 }
 
@@ -21,6 +25,7 @@
 .footer-basic li {
   padding:0 10px;
 }
+
 
 .footer-basic ul a {
   color:inherit;
@@ -52,6 +57,8 @@
 
 .footer-basic .social > a:hover {
   opacity:0.9;
+  color: #ca914e;
+
 }
 
 .footer-basic .copyright {
