@@ -11,6 +11,8 @@ const data = {
         weight: "80kg",
         color: "Marron",
         doors: "2",
+        image: "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png"
+
     },
     {
         id: 2,
@@ -22,6 +24,7 @@ const data = {
         weight: "100kg",
         color: "Marron",
         doors: "2",
+        image: "/assets/images/Armoire.jpg"
     },
     {
         id: 3,

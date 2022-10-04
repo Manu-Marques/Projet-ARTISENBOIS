@@ -5,6 +5,7 @@ import Bureau from '../../../src/assets/bureau.jpg';
 
 export default function SalledeBains(results) {
 
+  console.log(results);
   return (
     <div className="main">
       <h1>Salle de Bains</h1>

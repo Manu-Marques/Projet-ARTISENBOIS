@@ -2,7 +2,7 @@ import './styles.scss';
 import { NavLink } from 'react-router-dom';
 import Bureau from '../../../src/assets/bureau.jpg';
 
-export default function Cuisines (results) {
+export default function Cuisines(results) {
 
   return (
     <div className="main">
