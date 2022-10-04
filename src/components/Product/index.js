@@ -16,13 +16,14 @@ export default function Product({ results }) {
         const { id } = useParams();
         const product = results.filter((product) => product.title === id);
  
-        console.log('je suis le filter', product);
-        console.log('je suis lid', id);
-
     return (
         <div className="container2">
-            <img className="container2_product" src={Armoire} alt="" />
-            <div className="container3">
+
+{ product.map((product) => (
+    <img className="container2_product" src={product.image} alt="" />
+))
+}     
+<div className="container3">
                 <div className="container2_raiting">
                     <h1 className="container2_title">{id}</h1>
                     <div className="container2_raiting_stars">
@@ -59,15 +60,14 @@ export default function Product({ results }) {
                               product.map((result) => {
                                 return (
                                 <ul key={result.id} className="content_table">
-                            <li className="container2_details">Type de bois : <span className="container2_line">{result.type}</span></li>
-                            <li className="container2_details">Dimensions : <span className="container2_line">{result.dimensions}</span></li>
-                            <li className="container2_details">Poids : <span className="container2_line">{result.weight}</span></li>
-                            <li className="container2_details">Couleur : <span className="container2_line">{result.color}</span></li>
-                            <li className="container2_details">Nombre de portes : <span className="container2_line">{result.doors}</span></li>
-                        </ul>
- )    
-                    }
-                    )}
+                                        <li className="container2_details">Type de bois: <span className="container2_line">{result.type}</span></li>
+                                        <li className="container2_details">Dimensions: <span className="container2_line">{result.dimensions}</span></li>
+                                        <li className="container2_details">Poids: <span className="container2_line">{result.weight}</span></li>
+                                        <li className="container2_details">Couleur: <span className="container2_line">{result.color}</span></li>
+                                        <li className="container2_details">Nombre de portes: <span className="container2_line">{result.doors}</span></li>
+                                    </ul>
+ ) })
+                            }
                                
                     </div>
                     <div className={toggleState === 3 ? "content  active_content" : "content"}>

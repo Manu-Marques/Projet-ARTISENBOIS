@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header results={data} />
       <Routes>
         <Route path="/" element={<Accueil />} />
         {/* <Route path="/login" element={<Login />} />  */}
