@@ -3,7 +3,7 @@ const data = {
         {
         id: "1",
         //image: Armoire,
-        title: "Bibliothéque en chêne",
+        title: "Bibliothéque",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
         rating: 4.5,
         type: "Chêne",
