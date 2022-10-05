@@ -4,10 +4,10 @@ import Bureau from '../../../src/assets/bureau.jpg';
 
 
 export default function Sallons(results) {
-
+console.log(results);
   return (
     <div className="main">
-      <h1>Sallons</h1>
+      <h1>Salons</h1>
       <div className="row1">
         {
           results.results?.map((result) => {

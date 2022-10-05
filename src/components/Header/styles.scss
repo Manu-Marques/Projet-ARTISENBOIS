@@ -15,13 +15,14 @@
 
 }
 .mega_menu ul{
-	width: 100%;
 	background: white;
 	text-align: center;
-	line-height: 59px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	top: -15px;
+	align-items: center;
+	height: 70px;
 }
 
 .mega_menu ul li{
@@ -50,7 +51,7 @@
 	background: white;
 	width: 100%;
 	left: 0;
-	top: 58px;
+	top: 70px;
 	padding: 25px 35px;
 	display: flex;
 	justify-content: space-around;
@@ -90,10 +91,10 @@
 }
 
 .logo {
-  max-width: 75%;
+  width: 90%;
 
   &_menu {
-	max-width: 20%;
+	width: 20%;
   }
 }
 
