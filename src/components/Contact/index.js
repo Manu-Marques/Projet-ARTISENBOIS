@@ -7,17 +7,17 @@ return(
    <form class="contact_row">
       <div class="contact_container">
 		<div class="contact_display">
-		   <label class="contact_label" for="name">Name</label>
-		   <input id="name" class="contact_input" type="text" required/>
+		   <label class="contact_label" for="name"></label>
+		   <input placeholder="Name" class="contact_input" type="text" required/>
 		</div>
 		<div class="contact_display">
-		   <label class="contact_label" for="email">E-mail</label>
-		   <input class="contact_input" type="email" required/>
+		   <label class="contact_label" for="email"></label>
+		   <input placeholder="Email" class="contact_input" type="email" required/>
 		</div>
 	  </div>
       <div class="contact_message">
-         <label class="contact_label" for="message">Message</label>
-         <input class="conctact_send" type="text" required/>
+         <label class="contact_label" for="message"></label>
+         <input placeholder="Message" class="contact_send" type="text" required/>
       </div>
       <div class="contact_section">
          <input class="contact_submit" type="submit" value="Submit"/>
