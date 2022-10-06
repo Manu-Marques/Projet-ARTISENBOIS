@@ -4,14 +4,14 @@ const data = {
         id: "1",
         //image: Armoire,
         title: "Bibliothéque",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem",
         rating: 4.5,
         type: "Chêne",
         dimensions: "150x100x50",
         weight: "80kg",
         color: "Marron",
         doors: "2",
-        image: "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png"
+        image: ""
 
     },
     {
