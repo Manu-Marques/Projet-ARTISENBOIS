@@ -6,11 +6,10 @@
     width: 100%;
     margin: 0 auto;
     background-color: white;
-    padding-top: 20px;
+    position: absolute;
 }
 .footer-basic {
   color:black;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -72,3 +71,9 @@
   color:#aaa;
   margin-bottom:0;
 }
+
+@media (max-width:1080px) {
+  .footer {
+    position:inherit;
+  }
+} 
