@@ -6,13 +6,17 @@ import Salle_De_Bain from '../../../src/assets/salle de bain.jpg';
 import Terrasse from '../../../src/assets/terrasse.jpg';
 import Logo from '../../../src/assets/logo2.jpg';
 import React from 'react';
-
-
-
+import { useState } from 'react';
 import './styles.scss';
 
+
 export default function Header(data) {
-  console.log(data.results.salons);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const toggleMobileNav = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <div className="wrapper">
       <div className="mega_menu">
@@ -22,10 +26,15 @@ export default function Header(data) {
               <img className="logo" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
+          <input onChange={toggleMobileNav} checked={isChecked} id="toggle-nav" type="checkbox" />
+          <label htmlFor="toggle-nav">
+          <span className="bar bar-one" />
+          <span className="bar bar-two" />
+          <span className="bar bar-three" />
+        </label>
 
           <li>
             <NavLink to="/salons">Salons</NavLink>
-
             <div className="sub_menu">
               <div className="col">
                 <img src={Salon} alt="salon" />
@@ -36,8 +45,8 @@ export default function Header(data) {
                   <div key={result.id} className="col">
                     <NavLink
                       to={`/salons/product/${result.title}`}
-                      className="col_navigation"
-                    >
+                      className="col_navigation" onClick={toggleMobileNav}
+                    > 
                       {result.title}
                     </NavLink>
                   </div>
@@ -45,6 +54,15 @@ export default function Header(data) {
               })}
             </div>
           </li>
+
+          {/* <li>
+            <NavLink to="/login">Login</NavLink>
+            <div className="sub_menu">
+              <div className="col">
+                <img src={Chambre} alt="chambres" />
+              </div>
+                  </div>
+          </li> */}
 
           <li>
             <NavLink to="/chambres">Chambres</NavLink>
@@ -57,7 +75,7 @@ export default function Header(data) {
                   <div className="col">
                     <NavLink
                       to={`/chambres/product/${result.title}`}
-                      className="col_navigation"
+                      className="col_navigation"  onClick={toggleMobileNav}
                     >
                       {result.title}
                     </NavLink>
@@ -79,7 +97,7 @@ export default function Header(data) {
                   <div className="col">
                     <NavLink
                       to={`/salle-de-bains/product/${result.title}`}
-                      className="col_navigation"
+                      className="col_navigation"  onClick={toggleMobileNav}
                     >
                       {result.title}
                     </NavLink>
@@ -100,7 +118,7 @@ export default function Header(data) {
                   <div className="col">
                     <NavLink
                       to={`/exterieurs/product/${result.title}`}
-                      className="col_navigation"
+                      className="col_navigation"  onClick={toggleMobileNav}
                     >
                       {result.title}
                     </NavLink>
@@ -122,7 +140,7 @@ export default function Header(data) {
                   <div className="col">
                     <NavLink
                       to={`/cuisines/product/${result.title}`}
-                      className="col_navigation"
+                      className="col_navigation"  onClick={toggleMobileNav}
                     >
                       {result.title}
                     </NavLink>
