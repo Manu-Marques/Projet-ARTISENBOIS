@@ -102,11 +102,13 @@
 
     .row1 {
         flex-direction: column;
-        align-items: center;    }
+        align-items: center;    
+    }
+    
 	.image{
         display: flex;
 		flex: 100%;
-		max-width: 480px;
+		max-width: 380px;
 	}
 }
 

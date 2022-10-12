@@ -9,7 +9,7 @@ export default function Chambre(results) {
 
   return (
     <div className="main">
-      <h1>Chambre</h1>
+      <h1>Chambres</h1>
       <div className="row1">
         {
           results.results?.map((result) => {
