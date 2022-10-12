@@ -131,5 +131,82 @@
 
 
 
+  .mega_menu {
+	input[type="checkbox"]+label {
+		@media (min-width:1024px) {
+	  display: none !important;
+  }
+}
+input[type="checkbox"] {
+    display: none;
+
+    &~ul {
+      display: none;
+
+      @media screen and (min-width:1024px) {
+        display: flex;
+      }
+    }
+
+    &:checked {
+      &+label {
+        .bar-two {
+          display: none;
+        }
+
+        .bar-one {
+          transform: rotate(45deg);
+        }
+
+        .bar-three {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &~ul {
+        display: flex;
+      }
+    }
+
+    &+label {
+      display: block;
+      position: relative;
+      height: 15px;
+      width: 200px;
+
+      .bar {
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(49, 49, 49);
+        transition-duration: 0.5s;
+      }
+
+      .bar-two {
+        top: 6px;
+      }
+
+      .bar-three {
+        top: 12px;
+      }
+    }
+  }
+  }
+
+
+@media (max-width: 1024px) {
+	.mega_menu ul {
+		display: flex;
+		justify-content: center;
+	}
+	  .mega_menu ul li {
+	display: none;
+  }
+	.mega_menu ul li .sub_menu{
+		display: none;
+	}
+
+}
   
  
