@@ -5,24 +5,27 @@
   "proxy": "http://localhost:3000",
   "homepage": ".",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.2",
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
-    "@fortawesome/free-regular-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@babel/plugin-syntax-flow": "^7.18.6",
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "css-select": "^5.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.0",
     "react-validation": "^3.0.7",
-    "sass": "^1.54.3",
-    "web-vitals": "^2.1.4"
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^3.0.3",
+    "postcss": "^8.4.17",
+    "postcss-pseudo-class-any-link": "^7.1.6"
+
   },
   "scripts": {
     "start": "react-scripts --expose-gc --max_old_space_size=12000 start",
@@ -47,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss": "^8.4.17",
+    "postcss-pseudo-class-any-link": "^7.1.6",
+    "sass": "^1.55.0"
   }
 }

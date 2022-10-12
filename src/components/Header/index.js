@@ -5,6 +5,8 @@ import Cuisine from '../../../src/assets/cuisine.jpg';
 import Salle_De_Bain from '../../../src/assets/salle de bain.jpg';
 import Terrasse from '../../../src/assets/terrasse.jpg';
 import Logo from '../../../src/assets/logo2.jpg';
+import React from 'react';
+
 
 
 import './styles.scss';

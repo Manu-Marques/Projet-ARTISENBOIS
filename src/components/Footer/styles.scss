@@ -1,16 +1,14 @@
 @import './../Styles/index.scss';
 
-
 .footer{
    bottom: 0;
     width: 100%;
     margin: 0 auto;
     background-color: white;
-    padding-top: 20px;
+    position: absolute;
 }
 .footer-basic {
   color:black;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -43,6 +41,7 @@
 
 .footer-basic .social {
   text-align:center;
+  padding-top: 15px;
 }
 
 .footer-basic .social > a {
@@ -72,3 +71,9 @@
   color:#aaa;
   margin-bottom:0;
 }
+
+@media (max-width:1080px) {
+  .footer {
+    position:inherit;
+  }
+} 
