@@ -7,52 +7,37 @@ import Terrasse from '../../../src/assets/terrasse.jpg';
 import Logo from '../../../src/assets/logo2.jpg';
 import React from 'react';
 import { useState } from 'react';
+import { CgMenuRoud } from 'react-icons/cg';
 import './styles.scss';
 
 
 export default function Header(data) {
-  const [isChecked, setIsChecked] = useState(false);
+  const [open, setOpen] = useState(false);
+  
 
   const toggleMobileNav = () => {
-    setIsChecked(!isChecked);
+    setOpen(!open);
   };
+  console.log('tu me clique', toggleMobileNav);
 
   return (
     <div className="wrapper">
-      <div className="mega_menu">
-        <ul>
-          <div className="logo_menu">
+      <container className="wrapper_menu">
+          <div className="wrapper_logo">
             <NavLink to="/">
-              <img className="logo" src={Logo} alt="Logo_ArtisenBois" />
+              <img className="wrapper_img" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
-          <input onChange={toggleMobileNav} checked={isChecked} id="toggle-nav" type="checkbox" />
+        <ul className="wrapper_container">
+          <input onClick={toggleMobileNav}  checked={open} id="toggle-nav" type="checkbox" />
           <label htmlFor="toggle-nav">
           <span className="bar bar-one" />
           <span className="bar bar-two" />
           <span className="bar bar-three" />
         </label>
 
-          <li>
-            <NavLink to="/salons">Salons</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Salon} alt="salon" />
-              </div>
-
-              {data.results.salons?.map((result) => {
-                return (
-                  <div key={result.id} className="col">
-                    <NavLink
-                      to={`/salons/product/${result.title}`}
-                      className="col_navigation" onClick={toggleMobileNav}
-                    > 
-                      {result.title}
-                    </NavLink>
-                  </div>
-                );
-              })}
-            </div>
+          <li className="wrapper_links">
+            <NavLink className="wrapper_link" to="/salons">Salons</NavLink>
           </li>
 
           {/* <li>
@@ -64,93 +49,26 @@ export default function Header(data) {
                   </div>
           </li> */}
 
-          <li>
-            <NavLink to="/chambres">Chambres</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Chambre} alt="chambres" />
-              </div>
-              {data.results.chambres?.map((result) => {
-                return (
-                  <div className="col">
-                    <NavLink
-                      to={`/chambres/product/${result.title}`}
-                      className="col_navigation"  onClick={toggleMobileNav}
-                    >
-                      {result.title}
-                    </NavLink>
-                  </div>
-                );
-              })}
-            </div>
+          <li className="wrapper_links">
+            <NavLink className="wrapper_link"  to="/chambres">Chambres</NavLink>
+            
           </li>
 
-          <li>
-            <NavLink to="/salle-de-bains">Salle de Bains</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Salle_De_Bain} alt="salle_de_bain" />
-              </div>
-
-              {data.results.salle_de_bains?.map((result) => {
-                return (
-                  <div className="col">
-                    <NavLink
-                      to={`/salle-de-bains/product/${result.title}`}
-                      className="col_navigation"  onClick={toggleMobileNav}
-                    >
-                      {result.title}
-                    </NavLink>
-                  </div>
-                );
-              })}
-            </div>
+          <li className="wrapper_links">
+            <NavLink className="wrapper_link"  to="/salle-de-bains">Salle de Bains</NavLink>
           </li>
 
-          <li>
-            <NavLink to="/exterieurs">Extérieurs</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Terrasse} alt="terrasse" />
-              </div>
-              {data.results.exterieurs?.map((result) => {
-                return (
-                  <div className="col">
-                    <NavLink
-                      to={`/exterieurs/product/${result.title}`}
-                      className="col_navigation"  onClick={toggleMobileNav}
-                    >
-                      {result.title}
-                    </NavLink>
-                  </div>
-                );
-              })}
-            </div>
+          <li className="wrapper_links">
+            <NavLink className="wrapper_link"  to="/exterieurs">Extérieurs</NavLink>
           </li>
 
-          <li>
-            <NavLink to="/cuisines">Cuisines</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Cuisine} alt="cuisines" />
-              </div>
-
-              {data.results.cuisines?.map((result) => {
-                return (
-                  <div className="col">
-                    <NavLink
-                      to={`/cuisines/product/${result.title}`}
-                      className="col_navigation"  onClick={toggleMobileNav}
-                    >
-                      {result.title}
-                    </NavLink>
-                  </div>
-                );
-              })}
-            </div>
+          <li className="wrapper_links">
+            <NavLink className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
           </li>
         </ul>
-      </div>
+        </container>
     </div>
   );
 }
+
+
