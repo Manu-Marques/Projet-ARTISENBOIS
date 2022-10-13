@@ -130,7 +130,15 @@
 		border-radius: 50%;
 		
 	}
-
+		.show-nav .burger-bar::before {
+			transform: rotate(45deg);
+		}
+		.show-nav .burger-bar::after {
+			transform: rotate(-45deg);
+		}
+		.show-nav .burger-bar {
+			background-color: transparent;
+		}
 }
   
  
