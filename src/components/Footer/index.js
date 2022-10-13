@@ -15,6 +15,8 @@ export default function Footer() {
                 </div>
                 <ul className="list-inline">
                     <li className="list-inline-item">
+                    <NavLink className="footer_contact" to="/">Home</NavLink></li>
+                    <li className="list-inline-item">
                     <NavLink className="footer_contact" to="/contact">Contact</NavLink></li>
                     <li className="list-inline-item"><a href="#">About</a></li>
                     <li className="list-inline-item"><a href="#">Terms</a></li>

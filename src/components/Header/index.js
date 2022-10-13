@@ -11,7 +11,7 @@ import { CgMenuRoud } from 'react-icons/cg';
 import './styles.scss';
 
 
-export default function Header(data) {
+export default function Header() {
   const [open, setOpen] = useState(false);
   
 
@@ -21,20 +21,17 @@ export default function Header(data) {
   console.log('tu me clique', toggleMobileNav);
 
   return (
-    <div className="wrapper">
+    <div className={`wrapper ${open ? "show-nav" : "hidden-nav" }`}>
       <container className="wrapper_menu">
           <div className="wrapper_logo">
             <NavLink to="/">
               <img className="wrapper_img" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
+          <button onClick={toggleMobileNav} className="navbar_burger">
+          <span className="burger-bar" />
+          </button>
         <ul className="wrapper_container">
-          <input onClick={toggleMobileNav}  checked={open} id="toggle-nav" type="checkbox" />
-          <label htmlFor="toggle-nav">
-          <span className="bar bar-one" />
-          <span className="bar bar-two" />
-          <span className="bar bar-three" />
-        </label>
 
           <li className="wrapper_links">
             <NavLink className="wrapper_link" to="/salons">Salons</NavLink>
@@ -65,6 +62,7 @@ export default function Header(data) {
           <li className="wrapper_links">
             <NavLink className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
           </li>
+
         </ul>
         </container>
     </div>
