@@ -20,9 +20,8 @@ export default function Footer() {
                     <NavLink className="footer_contact" to="/contact">Contact</NavLink></li>
                     <li className="list-inline-item"><a href="#">About</a></li>
                     <li className="list-inline-item"><a href="#">Terms</a></li>
-                    <li className="list-inline-item"><a href="#">Privacy Policy</a></li>
                 </ul>
-                <p className="copyright">Company Name © 2018</p>
+                <p className="copyright">ARTISENBOIS 2020</p>
             </footer>
         </div>
     )
