@@ -23,15 +23,15 @@ export default function Header() {
   return (
     <div className={`wrapper ${open ? "show-nav" : "hidden-nav" }`}>
       <container className="wrapper_menu">
+          <button onClick={toggleMobileNav} className="navbar_burger">
+          <span className="burger-bar" />
+          </button>
+        <ul className="wrapper_container">
           <div className="wrapper_logo">
             <NavLink to="/">
               <img className="wrapper_img" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
-          <button onClick={toggleMobileNav} className="navbar_burger">
-          <span className="burger-bar" />
-          </button>
-        <ul className="wrapper_container">
 
           <li className="wrapper_links">
             <NavLink className="wrapper_link" to="/salons">Salons</NavLink>
