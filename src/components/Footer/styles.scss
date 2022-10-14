@@ -10,6 +10,8 @@
   color: black;
   bottom: 0;
   width: 100%;
+  position: relative ;
+  z-index: 100;
 }
 
 .footer-basic ul {
@@ -72,5 +74,7 @@
 @media (max-width: 1024px) {
   .footer {
     position: inherit;
+  }
+  .footer-basic {
   }
 }
