@@ -1,69 +1,69 @@
-@import './../Styles/index.scss';
+@import "./../Styles/index.scss";
 
 /* Pour le Header */
 
-.home{
+.home {
   height: 100vh;
   width: 100%;
   // background-color: rgb(38, 36, 36) ;
-  background-color: black ;
-
+  background-color: black;
 }
-.label{
+.label {
   position: absolute;
   top: 30%;
   left: 65%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 18%;
   display: flex;
   flex-direction: column;
 }
 
-.label span{
+.label span {
   position: relative;
   font-size: 1.5rem;
-  color: #252839;
-  -webkit-text-stroke: 1px   #383d52;
+  color: #733411;
+  -webkit-text-stroke: 1px #383d52;
   text-transform: uppercase;
-  
 }
 .text2::before {
-position: absolute;
-top: 0;
-left: 0;
-content: 'SUR MESURE ';
-width: 0;
-height: 100%;
-color: #ca914e;
--webkit-text-stroke: 0vw #383d52 ;
-border-right: 2px solid #ca914e;
-overflow: hidden;
-animation: animate 6s linear infinite;
-white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "SUR MESURE ";
+  width: 0;
+  height: 100%;
+  color: #ca914e;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #ca914e;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  white-space: nowrap;
 }
 .text1::before {
   position: absolute;
   top: 0;
   left: 0;
-  content: 'VOTRE BONHEUR';
+  content: "VOTRE BONHEUR";
   width: 0;
   height: 100%;
   color: #ca914e;
-  -webkit-text-stroke: 0vw #383d52 ;
+  -webkit-text-stroke: 0vw #383d52;
   border-right: 2px solid #ca914e;
   overflow: hidden;
   animation: animate 6s linear infinite;
   white-space: nowrap;
-  }
-  
+}
+
 @keyframes animate {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0%;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 100%;
-
-}
+  }
 }
 
 @media (max-width: 1024px) {

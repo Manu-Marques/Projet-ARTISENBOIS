@@ -1,13 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import Salon from '../../../src/assets/salon.jpg';
-import Chambre from '../../../src/assets/chambre.jpg';
-import Cuisine from '../../../src/assets/cuisine.jpg';
-import Salle_De_Bain from '../../../src/assets/salle de bain.jpg';
-import Terrasse from '../../../src/assets/terrasse.jpg';
 import Logo from '../../../src/assets/logo2.jpg';
 import React from 'react';
-import { useState } from 'react';
-import { CgMenuRoud } from 'react-icons/cg';
+import { useState, useEffect } from 'react';
 import './styles.scss';
 
 
@@ -18,7 +12,13 @@ export default function Header() {
   const toggleMobileNav = () => {
     setOpen(!open);
   };
-  console.log('tu me clique', toggleMobileNav);
+
+  useEffect(() => {
+    if (open) {
+      document.getElementById("close-buton").click()
+    }
+  }, [open]); 
+  console.log(open);
 
   return (
     <div className={`wrapper ${open ? "show-nav" : "hidden-nav" }`}>
