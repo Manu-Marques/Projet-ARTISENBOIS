@@ -18,11 +18,11 @@ export default function Header() {
       document.getElementById("close-buton").click()
     }
   }, [open]); 
-  console.log(open);
+
 
   return (
-    <div className={`wrapper ${open ? "show-nav" : "hidden-nav" }`}>
-      <container className="wrapper_menu">
+    <div className={`wrapper ${open ? "show-nav" : "hidden-nav" }`} id="close-buton">
+      <div className="wrapper_menu">
           <button onClick={toggleMobileNav} className="navbar_burger">
           <span className="burger-bar" />
           </button>
@@ -34,7 +34,7 @@ export default function Header() {
           </div>
 
           <li className="wrapper_links">
-            <NavLink className="wrapper_link" to="/salons">Salons</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Salons</NavLink>
           </li>
 
           {/* <li>
@@ -47,24 +47,24 @@ export default function Header() {
           </li> */}
 
           <li className="wrapper_links">
-            <NavLink className="wrapper_link"  to="/chambres">Chambres</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/chambres">Chambres</NavLink>
             
           </li>
 
           <li className="wrapper_links">
-            <NavLink className="wrapper_link"  to="/salle-de-bains">Salle de Bains</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/salle-de-bains">Salle de Bains</NavLink>
           </li>
 
           <li className="wrapper_links">
-            <NavLink className="wrapper_link"  to="/exterieurs">Extérieurs</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/exterieurs">Extérieurs</NavLink>
           </li>
 
           <li className="wrapper_links">
-            <NavLink className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
           </li>
 
         </ul>
-        </container>
+        </div>
     </div>
   );
 }
