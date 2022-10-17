@@ -26,12 +26,12 @@ export default function Header() {
           <button onClick={toggleMobileNav} className="navbar_burger">
           <span className="burger-bar" />
           </button>
-        <ul className="wrapper_container">
           <div className="wrapper_logo">
             <NavLink to="/">
               <img className="wrapper_img" src={Logo} alt="Logo_ArtisenBois" />
             </NavLink>
           </div>
+        <ul className="wrapper_container">
 
           <li className="wrapper_links">
             <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Salons</NavLink>

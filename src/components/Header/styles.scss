@@ -14,7 +14,7 @@
   width: 100%;
   height: 65px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
 }
 .wrapper_container {
@@ -46,6 +46,7 @@
 .wrapper_logo {
   width: 14%;
   height: 100px;
+  padding-top: 10px;
 }
 .navbar_burger {
   display: none;
@@ -62,6 +63,7 @@
     padding: 20px;
     background-color: black;
     transition: all 0.3s ease-in-out;
+    opacity: 0.9;
   }
 
   .show-nav .wrapper_container {
@@ -84,14 +86,19 @@
   .wrapper_menu {
     position: fixed;
     display: flex;
-    justify-content: center;
-    background: transparent;
+    justify-content: flex-start;
     z-index: 50;
-    opacity: 0.9;
+    height: 113px;
   }
 
+  .wrapper_img {
+    width: 17rem;
+    padding-top: 50px;
+  }
   .wrapper_logo {
-    display: none;
+    width: 60%;
+    height: 100px;
+ 
   }
   .burger-bar,
   .burger-bar::before,
@@ -118,7 +125,7 @@
   .navbar_burger {
     display: inline-block;
     position: absolute;
-    top: 60%;
+    top: 52%;
     right: 2%;
     z-index: 100;
     height: 50px;
@@ -127,6 +134,7 @@
     cursor: pointer;
     background-color: black;
     border-radius: 50%;
+    opacity: 0.8;
   }
   .show-nav .burger-bar::before {
     transform: rotate(45deg);
