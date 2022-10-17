@@ -73,3 +73,27 @@ margin:150px auto;
         
     }
 }
+
+@media (max-width: 1024px) {
+    .contact {
+        max-width: 90%;
+
+    &_row {
+        padding-bottom: 10px;
+    }
+
+    &_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    &_display {
+        padding-top: 10px;
+    }
+    &_section {
+        margin-top: 50px;
+    }
+    &_send {
+        width: 170px;
+    }
+}
+}

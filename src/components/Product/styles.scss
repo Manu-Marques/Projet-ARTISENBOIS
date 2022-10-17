@@ -1,23 +1,11 @@
 @import './../Styles/index.scss';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 500px;
-  height: 300px;
-  background: #f1f1f1;
-  margin: 100px auto 0;
-  word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
-}
-
 .container2 {
 background-color: white;
 max-width: 90%;
 margin: 0 auto;
 padding: 20px;
-margin-top: 5%;
+margin-top: 10%;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 margin-bottom: 85px;
 justify-content: space-around;
@@ -93,9 +81,6 @@ display: flex;
    outline: none;
  }
 
- .tabs:not(:last-child){
-   border-right: 1px solid rgba(0, 0, 0, 0.274);
- }
  
  .active_tabs  {
    background: white;
@@ -149,3 +134,25 @@ display: flex;
     width: 40%;
  }
  
+ @media (max-width: 1024px) {
+  .container2{
+    margin-top: 20%;
+    display: block;
+
+    &_product {
+      width: 100%;
+    }
+
+  }
+  .container3 {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .bloc_tabs {
+    display: block;
+  }
+  .content {
+    width: 85%;
+  }
+
+ }
