@@ -8,7 +8,7 @@ export default function Cuisines(results) {
 
   return (
     <div className="main">
-      <h1>Cuisines</h1>
+      <h1 className="main_title">Cuisines</h1>
       <div className="row1">
         {results.results?.map((result) => {
           return (
