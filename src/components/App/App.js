@@ -14,18 +14,15 @@ import React from 'react';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
 import data from '../../data/details-products';
-import { useEffect } from 'react';
+import ScrollToTop from '../ScrollToTop';
 
 
 export default function App() {
-  
-  useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
 
   return (
     <div className="App">
       <Header results={data} />
+        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/contact" element={<Contact />} />
