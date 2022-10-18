@@ -6,10 +6,11 @@ import React from 'react';
 
 
 export default function Sallons(results) {
-console.log(results);
   return (
     <div className="main">
-      <h1>Salons</h1>
+      <div class="main_raw">
+        <h1 className="main_title">Salons</h1>
+      </div>
       <div className="row1">
         {
           results.results?.map((result) => {

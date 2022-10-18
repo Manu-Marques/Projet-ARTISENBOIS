@@ -1,5 +1,4 @@
 import './styles.scss';
-import Accueil from '../../../src/assets/Accueil.jpg';
 import React from 'react';
 
 

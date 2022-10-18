@@ -20,7 +20,7 @@ export default function Product({ results }) {
     return (
       <div className="container2">
         {product.map((product) => (
-          <img className="container2_product" src={product.image} alt="" />
+          <img key={product.id} className="container2_product" src={product.image} alt="" />
         ))}
         <div className="container3">
           <div className="container2_raiting">
