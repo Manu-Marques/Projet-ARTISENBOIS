@@ -6,4 +6,4 @@
  Il est également __Responsive__ grace aux __Media Queries__.
 
 
-Visite le site ici : https://projetartisenbois.vercel.app/
+Lien du site ici : https://projetartisenbois.vercel.app/
