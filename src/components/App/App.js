@@ -2,7 +2,6 @@ import './App.scss';
 
 import Accueil from '../Home';
 import Header from '../Header';
-import Login from '../Login';
 import Contact from '../Contact';
 import Salons from '../Salons';
 import Product from '../Product';
@@ -44,7 +43,6 @@ export default function App() {
           path="/cuisines"
           element={<Cuisines results={data.cuisines} />}
         />
-        <Route path="/login" element={<Login />} />
 
         <Route
           path="/salons/product/:id"

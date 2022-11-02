@@ -37,15 +37,6 @@ export default function Header() {
             <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Salons</NavLink>
           </li>
 
-          {/* <li>
-            <NavLink to="/login">Login</NavLink>
-            <div className="sub_menu">
-              <div className="col">
-                <img src={Chambre} alt="chambres" />
-              </div>
-                  </div>
-          </li> */}
-
           <li className="wrapper_links">
             <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/chambres">Chambres</NavLink>
             
