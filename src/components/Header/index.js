@@ -34,24 +34,32 @@ export default function Header() {
         <ul className="wrapper_container">
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Salons</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Placards</NavLink>
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/chambres">Chambres</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/chambres">Parquets</NavLink>
             
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/salle-de-bains">Salle de Bains</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/salle-de-bains">Portes d'entrée et fenêtres</NavLink>
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/exterieurs">Extérieurs</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/exterieurs">Extérieurs et Terrasses</NavLink>
           </li>
 
           <li className="wrapper_links">
             <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
+          </li>
+
+          <li className="wrapper_links">
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/cuisines">Intérieurs</NavLink>
+          </li>
+
+          <li className="wrapper_links">
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/cuisines">Sous escaliers et sous pentes</NavLink>
           </li>
 
         </ul>
