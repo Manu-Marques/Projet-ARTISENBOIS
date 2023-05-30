@@ -8,7 +8,7 @@ export default function Exterieurs (results) {
 
   return (
     <div className="main">
-      <h1 className="main_title">Exterieurs</h1>
+      <h1 className="main_title">Extérieurs et Terrasses</h1>
       <div className="row1">
         {
           results.results?.map((result) => {

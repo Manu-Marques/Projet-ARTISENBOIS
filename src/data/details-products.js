@@ -1,5 +1,5 @@
 const data = {
-    salons : [
+    placards : [
         {
         id: "1",
         //image: Armoire,
@@ -54,7 +54,7 @@ const data = {
 
     },
     ],
-    chambres :
+    parquets :
     [
         {
         id: 5,
@@ -113,7 +113,7 @@ const data = {
 
     },
 ],
-salle_de_bains :
+entrée_fenêtre :
 [
     {
         id: 7,

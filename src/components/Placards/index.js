@@ -5,11 +5,12 @@ import React from 'react';
 
 
 
-export default function Chambre(results) {
-
+export default function Sallons(results) {
   return (
     <div className="main">
-      <h1 className="main_title">Chambres</h1>
+      <div class="main_raw">
+        <h1 className="main_title">Placards</h1>
+      </div>
       <div className="row1">
         {
           results.results?.map((result) => {
@@ -21,7 +22,7 @@ export default function Chambre(results) {
                   <p>{result.description}</p>
                   <div className="more">
                     <NavLink
-                      to={`/chambres/product/${result.title}`}
+                      to={`/salons/product/${result.title}`}
                       className="read-more"
                     >
                       En savoir plus

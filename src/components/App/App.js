@@ -3,12 +3,12 @@ import './App.scss';
 import Accueil from '../Home';
 import Header from '../Header';
 import Contact from '../Contact';
-import Salons from '../Salons';
+import Placards from '../Placards';
 import Product from '../Product';
 import Cuisines from '../Cuisines';
-import Chambres from '../Chambres';
+import Parquets from '../Parquets';
 import Exterieurs from '../Exterieurs';
-import SalleDeBains from '../Salle de bains';
+import Entrée_Fenêtre from '../Entrée&Fenêtre';
 import React from 'react';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
@@ -26,14 +26,14 @@ export default function App() {
         <Route path="/" element={<Accueil />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/salons" element={<Salons results={data.salons} />} />
+        <Route path="/salons" element={<Placards results={data.placards} />} />
         <Route
           path="/chambres"
-          element={<Chambres results={data.chambres} />}
+          element={<Parquets results={data.parquets} />}
         />
         <Route
           path="/salle-de-bains"
-          element={<SalleDeBains results={data.salle_de_bains} />}
+          element={<Entrée_Fenêtre results={data.entrée_fenêtre} />}
         />
         <Route
           path="/exterieurs"
