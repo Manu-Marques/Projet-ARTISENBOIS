@@ -8,7 +8,7 @@ export default function SalledeBains(results) {
 
   return (
     <div className="main">
-      <h1 className="main_title">Salle de Bains</h1>
+      <h1 className="main_title">Portes d'entrée et fenêtres</h1>
       <div className="row1">
         {results.results?.map((result) => {
           return (
