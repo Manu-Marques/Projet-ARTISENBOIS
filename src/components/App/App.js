@@ -9,7 +9,8 @@ import Cuisines from '../Cuisines';
 import Parquets from '../Parquets';
 import Exterieurs from '../Exterieurs';
 import Entrée_Fenêtre from '../Entrée&Fenêtre';
-import React from 'react';
+import Interieurs from '../Interieurs';
+import Escaliers from '../Escaliers';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
 import data from '../../data/details-products';
@@ -43,7 +44,16 @@ export default function App() {
           path="/cuisines"
           element={<Cuisines results={data.cuisines} />}
         />
+        <Route
+          path="/interieurs"
+          element={<Interieurs results={data.interieurs} />}
+        />
+        <Route
+          path="/escaliers"
+          element={<Escaliers results={data.escaliers} />}
+        />
 
+        
         <Route
           path="/salons/product/:id"
           element={<Product results={data.salons} />}

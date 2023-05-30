@@ -276,6 +276,60 @@ entrée_fenêtre :
 
     },
 ],
+    interieurs:
+    [
+    {
+        id: 19,
+        title: "Bibliothéque",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        rating: 4.5,
+        type: "Chêne",
+        dimensions: "150x100x50",
+        weight: "80kg",
+        color: "Marron",
+        doors: "2",
+        image: "https://zupimages.net/up/22/40/lhhm.jpg"
+    },
+    {
+        id: 20,
+        title: "Buffet de rangement",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        rating: 4,
+        type: "Chêne",
+        dimensions: "200x100x50",
+        weight: "100kg",
+        color: "Marron",
+        doors: "2",
+        image:"https://zupimages.net/up/22/40/lhhm.jpg"
+    }
+],
+    escaliers:
+    [
+    {
+        id: 21,
+        title: "Bibliothéque",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        rating: 4.5,
+        type: "Chêne",
+        dimensions: "150x100x50",
+        weight: "80kg",
+        color: "Marron",
+        doors: "2",
+        image: "https://zupimages.net/up/22/40/lhhm.jpg"
+    },
+    {
+        id: 22,
+        title: "Buffet de rangement",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+        rating: 4,
+        type: "Chêne",
+        dimensions: "200x100x50",
+        weight: "100kg",
+        color: "Marron",
+        doors: "2",
+        image:"https://zupimages.net/up/22/40/lhhm.jpg"
+    }
+]
 };
 
 export default data;
