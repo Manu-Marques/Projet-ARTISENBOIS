@@ -1,7 +1,6 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 import Bureau from '../../../src/assets/bureau.jpg';
-import React from 'react';
 
 
 
@@ -9,7 +8,7 @@ export default function Chambre(results) {
 
   return (
     <div className="main">
-      <h1 className="main_title">Parquets</h1>
+      <h1 className="main_title">Aménagements Extérieurs</h1>
       <div className="row1">
         {
           results.results?.map((result) => {

@@ -34,7 +34,7 @@ export default function Header() {
         <ul className="wrapper_container">
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/salons">Placards</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="wrapper_link" to="/amenagements_exterieurs">Amenagements Extérieurs</NavLink>
           </li>
 
           <li className="wrapper_links">
@@ -59,7 +59,7 @@ export default function Header() {
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/escaliers">Sous escaliers et sous pentes</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/agencements_sur_mesure">Agencements sur mesure</NavLink>
           </li>
         </ul>
         </div>

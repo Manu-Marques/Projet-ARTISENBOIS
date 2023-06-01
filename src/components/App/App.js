@@ -6,11 +6,11 @@ import Contact from '../Contact';
 import Placards from '../Placards';
 import Product from '../Product';
 import Cuisines from '../Cuisines';
-import Parquets from '../Parquets';
+import Amenagements from '../Amenagements';
 import Menuiserie from '../Menuiserie';
 import Entrée_Fenêtre from '../Entrée&Fenêtre';
 import Interieurs from '../Interieurs';
-import Escaliers from '../Escaliers';
+import Agencements from '../Agencements';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
 import data from '../../data/details-products';
@@ -29,15 +29,15 @@ export default function App() {
 
         <Route path="/salons" element={<Placards results={data.placards} />} />
         <Route
-          path="/chambres"
-          element={<Parquets results={data.parquets} />}
+          path="/amenagements"
+          element={<Amenagements results={data.amenagements} />}
         />
         <Route
           path="/salle-de-bains"
           element={<Entrée_Fenêtre results={data.entrée_fenêtre} />}
         />
         <Route
-          path="/exterieurs"
+          path="/menuiserie"
           element={<Menuiserie results={data.menuiserie} />}
         />
         <Route
@@ -49,8 +49,8 @@ export default function App() {
           element={<Interieurs results={data.interieurs} />}
         />
         <Route
-          path="/escaliers"
-          element={<Escaliers results={data.escaliers} />}
+          path="/agencements_sur_mesure"
+          element={<Agencements results={data.agencements} />}
         />
 
         
