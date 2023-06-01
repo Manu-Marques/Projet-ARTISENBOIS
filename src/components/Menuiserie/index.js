@@ -1,10 +1,9 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 import Bureau from '../../../src/assets/bureau.jpg';
-import React from 'react';
 
 
-export default function Menuiserie (results) {
+export default function Menuiserie(results) {
 
   return (
     <div className="main">

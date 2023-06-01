@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="App">
       <Header results={data} />
-        <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/contact" element={<Contact />} />
@@ -40,7 +40,7 @@ export default function App() {
           path="/agencements_sur_mesure"
           element={<Agencements results={data.agencements} />}
         />
-        
+
         <Route
           path="/salons/product/:id"
           element={<Product results={data.salons} />}

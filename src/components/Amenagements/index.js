@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import Bureau from '../../../src/assets/bureau.jpg';
 
 
-
 export default function Amenagements(results) {
 
   return (
