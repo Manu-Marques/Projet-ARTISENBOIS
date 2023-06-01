@@ -2,7 +2,6 @@ const data = {
     amenagements: [
         {
             id: "1",
-            //image: Armoire,
             title: "Bibliothéque",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem",
             rating: 4.5,
@@ -54,7 +53,7 @@ const data = {
 
         },
     ],
-    parquets:
+    menuiserie:
         [
             {
                 id: 5,
@@ -113,7 +112,7 @@ const data = {
 
             },
         ],
-    entrée_fenêtre:
+    sols:
         [
             {
                 id: 7,
@@ -157,151 +156,6 @@ const data = {
                 image: "https://zupimages.net/up/22/40/lhhm.jpg"
 
             },
-        ],
-    menuiserie:
-        [
-            {
-                id: 10,
-                title: "Terrasse",
-                description: "Lorem ipsum dolor sit amerum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 12,
-                title: "Chaise de jardin",
-                description: "Lorem ipsum dolor sit amet earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 13,
-                title: "Table rectangulaire",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 14,
-                title: "Cabanon",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem is fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-        ],
-    cuisines:
-        [
-            {
-                id: 15,
-                title: "Buffet",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, t ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 16,
-                title: "Meuble en bois",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repl providen non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 17,
-                title: "Plan de travail",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, iden non facilis fugit consequatur, fuga alias!",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-            {
-                id: 18,
-                title: "Meuble rangement",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil ",
-                price: 100,
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
-            },
-        ],
-    interieurs:
-        [
-            {
-                id: 19,
-                title: "Bibliothéque",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                rating: 4.5,
-                type: "Chêne",
-                dimensions: "150x100x50",
-                weight: "80kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-            },
-            {
-                id: 20,
-                title: "Buffet de rangement",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repel dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
-                rating: 4,
-                type: "Chêne",
-                dimensions: "200x100x50",
-                weight: "100kg",
-                color: "Marron",
-                doors: "2",
-                image: "https://zupimages.net/up/22/40/lhhm.jpg"
-            }
         ],
     agencements:
         [

@@ -4,11 +4,11 @@ import Bureau from '../../../src/assets/bureau.jpg';
 import React from 'react';
 
 
-export default function SalledeBains(results) {
+export default function Sols(results) {
 
   return (
     <div className="main">
-      <h1 className="main_title">Portes d'entrée et fenêtres</h1>
+      <h1 className="main_title">Revêtements de Sols</h1>
       <div className="row1">
         {results.results?.map((result) => {
           return (
@@ -19,7 +19,7 @@ export default function SalledeBains(results) {
                 <p>{result.description}</p>
                 <div className="more">
                   <NavLink
-                    to={`/salle-de-bains/product/${result.title}`}
+                    to={`/cuisines/product/${result.title}`}
                     className="read-more"
                   >
                     En savoir plus

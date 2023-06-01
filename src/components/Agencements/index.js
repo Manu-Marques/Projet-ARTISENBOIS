@@ -4,7 +4,7 @@ import Bureau from '../../../src/assets/bureau.jpg';
 import React from 'react';
 
 
-export default function Escaliers (results) {
+export default function Agencements (results) {
 
   return (
     <div className="main">

@@ -38,24 +38,11 @@ export default function Header() {
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/chambres">Parquets</NavLink>
-            
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/menuiserie_exterieur">Menuiserie Extérieurs</NavLink>
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/salle-de-bains">Portes d'entrée et fenêtres</NavLink>
-          </li>
-
-          <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/menuiserie_exterieurs">Menuiserie Extérieurs</NavLink>
-          </li>
-
-          <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/cuisines">Cuisines</NavLink>
-          </li>
-
-          <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/interieurs">Intérieurs</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/revetements_de_sols">Revêtements de sols</NavLink>
           </li>
 
           <li className="wrapper_links">

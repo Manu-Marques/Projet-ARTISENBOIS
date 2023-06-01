@@ -4,7 +4,7 @@ import Bureau from '../../../src/assets/bureau.jpg';
 
 
 
-export default function Chambre(results) {
+export default function Amenagements(results) {
 
   return (
     <div className="main">
