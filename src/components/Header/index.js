@@ -47,7 +47,7 @@ export default function Header() {
           </li>
 
           <li className="wrapper_links">
-            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/exterieurs">Extérieurs et Terrasses</NavLink>
+            <NavLink onClick={() => setOpen(false)}  className="wrapper_link"  to="/menuiserie_exterieurs">Menuiserie Extérieurs</NavLink>
           </li>
 
           <li className="wrapper_links">

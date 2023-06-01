@@ -158,7 +158,7 @@ entrée_fenêtre :
 
     },
 ],
-    exterieurs :
+    menuiserie :
     [
     {
         id: 10,

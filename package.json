@@ -16,6 +16,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "css-select": "^5.1.0",
+    "postcss": "^8.4.17",
+    "postcss-pseudo-class-any-link": "^7.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -23,10 +25,7 @@
     "react-scripts": "5.0.0",
     "react-validation": "^3.0.7",
     "uuidv4": "^6.2.13",
-    "web-vitals": "^3.0.3",
-    "postcss": "^8.4.17",
-    "postcss-pseudo-class-any-link": "^7.1.6"
-
+    "web-vitals": "^3.0.3"
   },
   "scripts": {
     "start": "react-scripts --expose-gc --max_old_space_size=12000 start",

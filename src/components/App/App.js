@@ -7,7 +7,7 @@ import Placards from '../Placards';
 import Product from '../Product';
 import Cuisines from '../Cuisines';
 import Parquets from '../Parquets';
-import Exterieurs from '../Exterieurs';
+import Menuiserie from '../Menuiserie';
 import Entrée_Fenêtre from '../Entrée&Fenêtre';
 import Interieurs from '../Interieurs';
 import Escaliers from '../Escaliers';
@@ -38,7 +38,7 @@ export default function App() {
         />
         <Route
           path="/exterieurs"
-          element={<Exterieurs results={data.exterieurs} />}
+          element={<Menuiserie results={data.menuiserie} />}
         />
         <Route
           path="/cuisines"
