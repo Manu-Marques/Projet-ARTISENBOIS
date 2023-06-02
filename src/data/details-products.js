@@ -2,7 +2,7 @@ const data = {
     amenagements: [
         {
             id: "1",
-            title: "Bibliothéque",
+            title: "Porte d'entrée",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem",
             rating: 4.5,
             type: "Chêne",
@@ -15,7 +15,7 @@ const data = {
         },
         {
             id: 2,
-            title: "Buffet de rangement",
+            title: "Porte de garage",
             description: "Lorem ipsum dolor sit amlit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
             rating: 4,
             type: "Chêne",
@@ -27,7 +27,7 @@ const data = {
         },
         {
             id: 3,
-            title: "Table à manger",
+            title: "Fenêtres et portes fenêtres",
             description: "Lorem ipsum d consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
             rating: 4.5,
             type: "Chêne",
@@ -40,8 +40,8 @@ const data = {
         },
         {
             id: 4,
-            title: "Chaise en bois",
-            description: "Lorem ipsum dolor etur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
+            title: "Volets",
+            description: "à venir",
             price: 100,
             rating: 4.5,
             type: "Chêne",
