@@ -40,6 +40,10 @@ export default function App() {
           path="/agencements_sur_mesure"
           element={<Agencements results={data.agencements} />}
         />
+        <Route
+          path="/agencements_sur_mesure/galerie"
+          element={<Agencements results={data.agencements} />}
+        />
 
         <Route
           path="/salons/product/:id"

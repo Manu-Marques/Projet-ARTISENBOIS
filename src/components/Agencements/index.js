@@ -7,7 +7,7 @@ export default function Agencements(results) {
 
   return (
     <div className="main">
-      <h1 className="main_title">Agencements Intérieurs</h1>
+      <h1 className="main_title">Agencements sur mesure</h1>
       <div className="row1">
         {
           results.results?.map((result) => {
@@ -19,10 +19,10 @@ export default function Agencements(results) {
                   <p>{result.description}</p>
                   <div className="more">
                     <NavLink
-                      to={`/exterieurs/product/${result.title}`}
+                      to={`/agencements_sur_mesure/galerie/${result.title}`}
                       className="read-more"
                     >
-                      En savoir plus
+                      Galerie
                     </NavLink>
                     <div className="icon-links"></div>
                   </div>
