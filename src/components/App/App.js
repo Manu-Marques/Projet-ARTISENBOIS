@@ -10,7 +10,8 @@ import Menuiserie from '../Menuiserie';
 import Agencements from '../Agencements';
 import Footer from '../Footer';
 import { Routes, Route } from 'react-router-dom';
-import data from '../../data/details-products';
+import data from '../../data/agencements-sur-mesure';
+//  import data from '../../data/details-products';
 import ScrollToTop from '../ScrollToTop';
 
 
@@ -38,7 +39,7 @@ export default function App() {
         />
         <Route
           path="/agencements_sur_mesure"
-          element={<Agencements results={data.agencements} />}
+          element={<Agencements results={data} />}
         />
         <Route
           path="/agencements_sur_mesure/galerie"

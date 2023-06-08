@@ -1,4 +1,4 @@
-const data = {
+const amenagementsData = {
     amenagements: [
         {
             id: "1",
@@ -186,4 +186,4 @@ const data = {
         ]
 };
 
-export default data;
+export default amenagementsData;

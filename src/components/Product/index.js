@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStars } from '@fortawesome/free-regular-svg-icons';
 import { useParams } from 'react-router-dom';
-import React from 'react';
 
 
 

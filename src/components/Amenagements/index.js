@@ -5,6 +5,8 @@ import Bureau from '../../../src/assets/bureau.jpg';
 
 export default function Amenagements(results) {
 
+  console.log(results);
+
   return (
     <div className="main">
       <h1 className="main_title">Aménagements Extérieurs</h1>
