@@ -3,29 +3,23 @@ import { NavLink } from 'react-router-dom';
 import Bureau from '../../../src/assets/bureau.jpg';
 
 
-export default function Agencements({results}) {
+export default function Agencements({results, category}) {
 
-  const tableNames = Object.keys(results).filter(
-    (key) => Array.isArray(results[key])
-  );
-
-    console.log(tableNames)
 
   return (
     <div className="main">
       <h1 className="main_title">Agencements sur mesure</h1>
       <div className="row1">
         {
-         tableNames.map((result) => {
+         Object.keys(results).map((category, index) => {
             return (
-              <div key={result.id} className="image">
+              <div key={index} className="image">
                 <img src={Bureau} alt="" />
                 <div className="details">
-                  <h2>{result}</h2>
-                  <p>{result.description}</p>
+                  <h2>{category}</h2>
                   <div className="more">
-                    <NavLink
-                      to={`/agencements_sur_mesure/galerie/${result.title}`}
+                    <NavLink 
+                      to={`/agencements_sur_mesure/galerie/${category}}`}
                       className="read-more"
                     >
                       Galerie

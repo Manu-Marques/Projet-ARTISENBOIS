@@ -2,29 +2,29 @@ import "./styles.scss";
 import { NavLink } from "react-router-dom";
 
 
-export default function Agencements({ results }) {
-   if (results) {
-   console.log(results);
-   }
-   
+export default function SousCategorie({category, results }) {
+
+const products = results[category];
+
+console.log(category);
+
    return (
       <div className="main">
-        <h1 className="main_title">Agencements sur mesure</h1>
+        <h1 className="main_title">{products}</h1>
         <div className="row1">
           {
-             results.map((result) => {
+             products.map((result, index) => {
                 return (
-                   <div key={result.sous_escaliers} className="image">
+                   <div key={result.Sous_escaliers} className="image">
                  <img src={result.image} alt="" />
                  <div className="details">
-                    <h2>{result.sous_escaliers.title}</h2>
-                    <p>{result.description}</p>
+                    <h2>{result.title}</h2>
                     <div className="more">
                       <NavLink
-                         to={`/agencements_sur_mesure/galerie/product/${result.title}`}
+                         to={`/agencements_sur_mesure/galerie/${category}/${index}`}
                          className="read-more"
                          >
-                         Galerie
+                         Voir les détails
                       </NavLink>
                       <div className="icon-links"></div>
                     </div>

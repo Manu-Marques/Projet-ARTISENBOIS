@@ -1,5 +1,5 @@
 const amenagementsData = {
-    amenagements: [
+    sous_escaliers: [
         {
             id: "1",
             title: "Porte d'entrée",
@@ -11,7 +11,6 @@ const amenagementsData = {
             color: "Marron",
             doors: "2",
             image: "https://zupimages.net/up/22/40/lhhm.jpg"
-
         },
         {
             id: 2,
