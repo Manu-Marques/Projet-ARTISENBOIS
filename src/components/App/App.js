@@ -1,24 +1,21 @@
 import './App.scss';
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop';
 
+//components
 import Accueil from '../Home';
 import Header from '../Header';
 import Contact from '../Contact';
-import DetailsProduct from '../DetailsProduct';
-import Sols from '../Sols';
-import Amenagements from '../Amenagements';
-import Menuiserie from '../Menuiserie';
-import Agencements from '../Agencements';
 import Footer from '../Footer';
-import { Routes, Route } from 'react-router-dom';
-import ScrollToTop from '../ScrollToTop';
+import DetailsProduct from '../DetailsProduct';
 import Categories from '../Categories';
 import SousCategorie from '../SousCategorie';
 
 //data
 import agencementsData from '../../data/agencements-sur-mesure';
 import amenagementsData from '../../data/amenagements-exterieurs';
-import menuiserieData from '../../data/menuiserie-exterieurs';  
+import menuiserieData from '../../data/menuiserie-exterieurs';
 import revetementsData from '../../data/revetements-sols';
 
 
@@ -27,11 +24,13 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const agencementCategories = Object.keys(agencementsData);
-  const amenagementsCategories = Object.keys(amenagementsData);
-  const menuiserieCategories = Object.keys(menuiserieData);
-  const revetementsCategories = Object.keys(revetementsData);
-
+  const [agencementCategories, amenagementsCategories, menuiserieCategories, revetementsCategories] = [
+    Object.keys(agencementsData),
+    Object.keys(amenagementsData),
+    Object.keys(menuiserieData),
+    Object.keys(revetementsData)
+  ];
+  
   const selectCategory = (category) => {
     setSelectedCategory(category);
     setSelectedProduct(null);
@@ -43,7 +42,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header  />
+      <Header />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Accueil />} />
@@ -54,6 +53,7 @@ export default function App() {
           path="/amenagements_exterieurs"
           element={
             <Categories
+              groupe="amenagements_exterieurs"
               categories={amenagementsCategories}
               selectCategory={selectCategory}
             />
@@ -61,89 +61,59 @@ export default function App() {
         />
 
         <Route
-        path='menuiserie_exterieur'
-        element={
-          <Categories
-            categories={menuiserieCategories}
-            selectCategory={selectCategory}
-          />
-        }
+          path='menuiserie_exterieur'
+          element={
+            <Categories
+              groupe="menuiserie_exterieur"
+              categories={menuiserieCategories}
+              selectCategory={selectCategory}
+            />
+          }
         />
 
         <Route
-        path='revetements_de_sols'
-        element={
-          <Categories
-            categories={revetementsCategories}
-            selectCategory={selectCategory}
-          />
-        }
+          path='revetements_de_sols'
+          element={
+            <Categories
+              groupe="revetements_de_sols"
+              categories={revetementsCategories}
+              selectCategory={selectCategory}
+            />
+          }
         />
 
         <Route exact path="/agencements_sur_mesure"
           element={
             <Categories
+              groupe="agencements_sur_mesure"
               categories={agencementCategories}
               selectCategory={selectCategory}
             />
           }
         />
 
-        <Route exact path="/agencements_sur_mesure/:category"
+        <Route exact path="/:groupe/:category"
           element={
             <SousCategorie
               selectedCategory={selectedCategory}
               agencementsData={agencementsData}
-              selectProduct={selectProduct}
-            />
-          }
-        />
-
-        <Route exact path="/amenagements_exterieurs/:category"
-          element={
-            <SousCategorie
-              selectedCategory={selectedCategory}
               amenagementsData={amenagementsData}
-              selectProduct={selectProduct}
-            />
-          }
-        />
-
-        <Route exact path="/menuiserie_exterieur/:category"
-          element={
-            <SousCategorie
-              selectedCategory={selectedCategory}
               menuiserieData={menuiserieData}
-              selectProduct={selectProduct}
-            />
-          }
-        />
-
-        <Route exact path="/revetements_de_sols/:category"
-          element={
-            <SousCategorie
-              selectedCategory={selectedCategory}
               revetementsData={revetementsData}
               selectProduct={selectProduct}
             />
           }
         />
 
-        <Route exact path="/amenagements_exterieurs/:category/:productId"
-          element={<DetailsProduct
-            amenagementsData={amenagementsData} />}
+        <Route exact path="/:groupe/:category/:productId" element={
+          <DetailsProduct
+            amenagementsData={amenagementsData}
+            agencementsData={agencementsData}
+            menuiserieData={menuiserieData}
+            revetementsData={revetementsData}
             selectProduct={selectProduct}
-        >
-        </Route>
-        
-
-
-        <Route exact path="/agencements_sur_mesure/:category/:productId"
-          element={<DetailsProduct
-            agencementsData={agencementsData} />}
-            selectProduct={selectProduct}
-        >
-        </Route>
+          />
+        }></Route>
       </Routes>
       <Footer />
     </div>

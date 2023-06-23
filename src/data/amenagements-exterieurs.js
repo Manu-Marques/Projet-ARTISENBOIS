@@ -3,7 +3,7 @@ const amenagementsData = {
     Terrasses_en_bois: [
         {
             id: "1",
-            title: "Terrase en chêne",
+            title: "Terrasse en chêne",
             description: "Lorem ipsum d consectetur adipisicing elit. Voluptatum earum nesciunt nulla veritatis natus ratione repellat dolorum, quidem, enim voluptatem at ullam nihil providen non facilis fugit consequatur, fuga alias!",
             type: "Chêne",
             dimensions: "200x100x50",

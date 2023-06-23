@@ -4,14 +4,26 @@ import { useState } from 'react';
 
 
 
-export default function DetailsProduct({ agencementsData }) {
+export default function DetailsProduct({amenagementsData, menuiserieData, revetementsData, agencementsData  }) {
 
-  const { category, productId } = useParams();
+  const {groupe, category, productId } = useParams();
 
-  const selectedCategory = agencementsData[category] || [];
+  let selectedCategory = agencementsData[category] || menuiserieData[category] || revetementsData[category] || amenagementsData[category] || [];
+
+
+  if (groupe === 'amenagements_exterieurs') {
+    selectedCategory = amenagementsData[category] || [];
+  } else if (groupe === 'menuiserie_exterieur') {
+    selectedCategory = menuiserieData[category] || [];
+  } else if (groupe === 'revetements_de_sols') {
+    selectedCategory = revetementsData[category] || [];
+  } else if (groupe === 'agencements_sur_mesure') {
+    selectedCategory = agencementsData[category] || [];
+  }
+
+
   const products = selectedCategory.find((product) => product.id === productId);
 
-  console.log(products.title);
 
   const [toggleState, setToggleState] = useState(1);
 

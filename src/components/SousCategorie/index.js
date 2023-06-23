@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct, product }) => {
-    const { category } = useParams();
+const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct }) => {
+    const { groupe, category } = useParams();
     const subCategories = [...(agencementsData[selectedCategory] || []), ...(amenagementsData[selectedCategory] || []), ...(menuiserieData[selectedCategory] || []), ...(revetementsData[selectedCategory] || [])];
 
     console.log('j/arrive ici pour la 2eme fois');
-
-    console.log(subCategories);
 
     return (
         <div>
@@ -15,7 +13,7 @@ const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, rev
             <ul>
                 {subCategories.map((subCategory) => (
                     <li key={subCategory}>
-                        <Link to={`/agencements_sur_mesure/${selectedCategory}/${subCategory.id}`} onClick={() => selectProduct()}>
+                        <Link to={`/${groupe}/${selectedCategory}/${subCategory.id}`} onClick={() => selectProduct()}>
                             {subCategory.title}
                         </Link>
                     </li>
