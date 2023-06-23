@@ -1,13 +1,15 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.scss';
+import { useState } from 'react';
 
-const Categories = ({ categories, selectCategory }) => {
+export default function Categories ({ categories, selectCategory }) {
+
 
    console.log('j/arrive ici pour la 1ere fois');
    
   return (
     <div>
-      <h2>Galerie</h2>
+      <h2>Agencements sur mesure</h2>
       <ul>
         {categories.map((category) => (
           <li key={category}>
@@ -20,5 +22,3 @@ const Categories = ({ categories, selectCategory }) => {
     </div>
   );
 };
-
-export default Categories;

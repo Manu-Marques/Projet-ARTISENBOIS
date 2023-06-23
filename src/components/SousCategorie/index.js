@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const SousCategorie = ({ selectedCategory, agencementsData, selectProduct, product }) => {
+const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct, product }) => {
     const { category } = useParams();
-    const subCategories = agencementsData[selectedCategory] || [];
+    const subCategories = [...(agencementsData[selectedCategory] || []), ...(amenagementsData[selectedCategory] || []), ...(menuiserieData[selectedCategory] || []), ...(revetementsData[selectedCategory] || [])];
 
     console.log('j/arrive ici pour la 2eme fois');
 
