@@ -30,7 +30,7 @@ export default function SousCategorie({ selectedCategory, amenagementsData, menu
                     <div key={subCategory} className='image'>
                         <img src={Bureau} alt='' />
                         <div className='details'>
-                            <h2>{subCategory.title}</h2>
+                            <h2 className='title'>{subCategory.title}</h2>
                             <div className='more'>
                                 <Link to={`/${groupe}/${selectedCategory}/${subCategory.id}`} className='read-more' onClick={() => selectProduct()}>
                                     Détails

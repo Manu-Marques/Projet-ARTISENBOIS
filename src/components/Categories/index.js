@@ -13,7 +13,7 @@ export default function Categories({ groupe, categories, selectCategory }) {
             <div key={category.id} className='image'>
               <img src={Bureau} alt="" />
               <div className="details">
-              <h2>{category.replace(/_/g, ' ')}</h2>
+              <h2 className='title'>{category.replace(/_/g, ' ')}</h2>
               <div className="more">
               <Link to={`/${groupe}/${category}`} className='read-more' onClick={() => selectCategory(category)}>
                Galerie

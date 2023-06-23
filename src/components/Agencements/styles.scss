@@ -5,12 +5,14 @@
   margin-bottom: 100px;
 
   &_title{
+    text-transform: capitalize;
     font-size: 40px;
     font-weight: 900;
     text-align: center;
     margin-bottom: 50px;
   }
 }
+
 
 .row1 {
   width: 100%;
