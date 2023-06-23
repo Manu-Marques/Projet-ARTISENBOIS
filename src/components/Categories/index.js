@@ -2,16 +2,13 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 export default function Categories ({groupe, categories, selectCategory }) {
-
-
-  console.log(groupe)
-   console.log('j/arrive ici pour la 1ere fois');
+  const formattedCategories = categories?.map((category) => category.replace(/_/g, ' '));
    
   return (
     <div>
-      <h2>{groupe}</h2>
+      <h2>{groupe.replace(/_/g,' ')}</h2>
       <ul>
-        {categories?.map((category) => (
+        {formattedCategories?.map((category) => (
           <li key={category}>
             <Link to={`/${groupe}/${category}`} onClick={() => selectCategory(category)}>
               {category}

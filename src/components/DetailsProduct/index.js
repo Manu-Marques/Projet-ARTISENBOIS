@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 
 
-
 export default function DetailsProduct({amenagementsData, menuiserieData, revetementsData, agencementsData  }) {
 
   const {groupe, category, productId } = useParams();
