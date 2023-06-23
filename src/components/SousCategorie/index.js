@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import Bureau from '../../../src/assets/bureau.jpg';
+import './styles.scss';
 
-const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct }) => {
+export default function SousCategorie({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct }) {
     const { groupe, category } = useParams();
 
     let subCategories = [
@@ -11,30 +13,36 @@ const SousCategorie = ({ selectedCategory, amenagementsData, menuiserieData, rev
         ...(revetementsData[selectedCategory] || []),
     ];
 
+
+    console.log(subCategories);
+
     subCategories = subCategories.map((subCategory) => ({
         ...subCategory,
         title: subCategory.title.replace(/_/g, ' '),
     }));
 
 
-
-    console.log(subCategories)
-    console.log('j/arrive ici pour la 2eme fois');
-
     return (
-        <div>
-            <h2>Sous-catégories de {category.replace(/_/g, ' ')}</h2>
-            <ul>
+        <div className='main'>
+            <h2 className='main_title'>{category.replace(/_/g, ' ')}</h2>
+            <div className='row1'>
                 {subCategories.map((subCategory) => (
-                    <li key={subCategory.id}>
-                        <Link to={`/${groupe}/${selectedCategory}/${subCategory.id}`} onClick={() => selectProduct()}>
-                            {subCategory.title}
-                        </Link>
-                    </li>
+                    <div key={subCategory} className='image'>
+                        <img src={Bureau} alt='' />
+                        <div className='details'>
+                            <h2>{subCategory.title}</h2>
+                            <div className='more'>
+                                <Link to={`/${groupe}/${selectedCategory}/${subCategory.id}`} className='read-more' onClick={() => selectProduct()}>
+                                    Détails
+                                </Link>
+                                <div className='icon-links'>                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
 
-export default SousCategorie;
