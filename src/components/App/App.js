@@ -1,5 +1,5 @@
 import './App.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop';
 
@@ -34,7 +34,17 @@ export default function App() {
   const selectCategory = (category) => {
     setSelectedCategory(category);
     setSelectedProduct(null);
+    localStorage.setItem('selectedCategory', category);
   };
+
+  useEffect(() => {
+    const storedCategory = localStorage.getItem('selectedCategory');
+    if (storedCategory) {
+      setSelectedCategory(storedCategory);
+    }
+  }, []);
+
+
 
   const selectProduct = (product) => {
     setSelectedProduct(product);

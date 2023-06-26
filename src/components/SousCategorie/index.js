@@ -4,6 +4,8 @@ import Bureau from '../../../src/assets/bureau.jpg';
 import './styles.scss';
 
 export default function SousCategorie({ selectedCategory, amenagementsData, menuiserieData, revetementsData, agencementsData, selectProduct }) {
+
+  
     const { groupe, category } = useParams();
 
     let subCategories = [
@@ -14,12 +16,11 @@ export default function SousCategorie({ selectedCategory, amenagementsData, menu
     ];
 
 
-    console.log(subCategories);
-
     subCategories = subCategories.map((subCategory) => ({
         ...subCategory,
         title: subCategory.title.replace(/_/g, ' '),
     }));
+    
 
 
     return (

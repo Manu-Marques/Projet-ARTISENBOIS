@@ -5,6 +5,7 @@ import Bureau from '../../../src/assets/bureau.jpg';
 
 export default function Categories({ groupe, categories, selectCategory }) {
 
+
   return (
     <div className="main">
       <h2 className="main_title">{groupe.replace(/_/g, ' ')}</h2>
